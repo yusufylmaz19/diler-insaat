@@ -1,4 +1,27 @@
-/* Desktop: a stationary construction sequence. Mobile: an unpinned timed scene. */
+/* Desktop and mobile use stationary scroll-driven construction sequences. */
+.construction-mobile-track { height: 100%; min-height: 0; }
+@media (max-width: 700px) {
+  .construction-hero .construction-mobile-track {
+    height: 220svh;
+    margin-top: 35px;
+  }
+  .construction-hero .construction-mobile-track .build-visual {
+    position: sticky;
+    top: 72px;
+    height: calc(100svh - 88px);
+    max-height: 720px;
+    margin-top: 0;
+  }
+  .construction-hero.construction-static .construction-mobile-track,
+  .construction-hero.construction-unavailable .construction-mobile-track {
+    height: auto;
+  }
+  .construction-hero.construction-static .construction-mobile-track .build-visual,
+  .construction-hero.construction-unavailable .construction-mobile-track .build-visual {
+    position: relative;
+    top: 0;
+  }
+}
 .construction-hero {
   overflow: visible;
   min-height: 0;

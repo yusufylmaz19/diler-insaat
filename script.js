@@ -39,6 +39,10 @@ function initConstruction(copy) {
   track.append(grid);
   hero.classList.add("construction-hero");
   const visual = $(".build-visual");
+  const mobileTrack = document.createElement("div");
+  mobileTrack.className = "construction-mobile-track";
+  visual.before(mobileTrack);
+  mobileTrack.append(visual);
   visual.removeAttribute("aria-hidden");
   visual.innerHTML = `<div class="construction-heading"><span>${esc(copy.title)}</span><span class="construction-count" aria-hidden="true">01 / 09</span></div><div class="construction-view"><img class="construction-fallback" src="assets/construction-fallback.svg" alt="${esc(copy.fallback)}"><canvas class="construction-canvas" aria-hidden="true"></canvas></div><div class="construction-caption"><span class="construction-stage" role="status" aria-live="polite">${esc(copy.stages[0])}</span><button class="construction-control" hidden>${esc(copy.pause)}</button></div><div class="construction-progress" aria-hidden="true"><span></span></div><p class="construction-hint">${esc(copy.desktopHint)}</p>`;
   import("./construction.js")
@@ -70,6 +74,16 @@ function renderMedia(items) {
   return `<div class="media-archive wrap">${photos.length ? `<section aria-labelledby="photos-title"><h3 id="photos-title">Fotoğraf arşivi <small>${photos.length} fotoğraf</small></h3><div class="media-grid" id="photo-grid">${photos.map((item, index) => `<a class="media-photo" href="${esc(item.src)}" target="_blank" rel="noopener noreferrer"${index >= 12 ? " hidden" : ""}><img src="${esc(item.src)}" alt="${esc(item.title || "Proje fotoğrafı")}" loading="lazy" decoding="async"></a>`).join("")}</div>${photos.length > 12 ? '<button class="button media-more" aria-controls="photo-grid">Daha fazla fotoğraf göster</button>' : ""}<p class="media-count" role="status">${Math.min(12, photos.length)} / ${photos.length} fotoğraf gösteriliyor</p></section>` : ""}${videos.length ? `<section aria-labelledby="videos-title"><h3 id="videos-title">Video arşivi <small>${videos.length} video</small></h3><div class="media-grid">${videos.map((item) => `<figure class="media-video"><video src="${esc(item.src)}"${item.poster ? ` poster="${esc(item.poster)}"` : ""} aria-label="${esc(item.title || "Proje videosu")}" preload="none" playsinline controls></video><figcaption>${esc(item.title || "Proje videosu")}</figcaption></figure>`).join("")}</div></section>` : ""}</div>`;
 }
 function initMedia() {
+  document.querySelectorAll("video").forEach((video) => {
+    video.defaultMuted = true;
+    const silence = () => {
+      if (!video.muted) video.muted = true;
+      if (video.volume !== 0) video.volume = 0;
+    };
+    silence();
+    video.addEventListener("volumechange", silence);
+    video.addEventListener("play", silence);
+  });
   const button = $(".media-more");
   if (!button) return;
   button.onclick = () => {

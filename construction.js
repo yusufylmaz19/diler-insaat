@@ -300,7 +300,7 @@ export function initConstructionScene({ hero, grid, track, visual, copy }) {
     stageIndex = -1;
   const duration = Math.max(12, Number(copy.duration) || 24);
   const staticMode = () => reduced.matches && !optIn;
-  const timed = () => mobile.matches || optIn;
+  const timed = () => optIn;
   const cleanups = [];
   function listen(target, event, handler, options) {
     target.addEventListener(event, handler, options);
@@ -343,11 +343,13 @@ export function initConstructionScene({ hero, grid, track, visual, copy }) {
   }
   function scrollProgress() {
     if (!timed() && !staticMode() && !paused) {
-      const rect = track.getBoundingClientRect();
+      const scrollTrack = mobile.matches ? visual.parentElement : track;
+      const pinned = mobile.matches ? visual : grid;
+      const rect = scrollTrack.getBoundingClientRect();
       // The model is finished while the sticky section still has a short viewing hold.
       progress = clamp(
-        (84 - rect.top) /
-          Math.max(1, (track.offsetHeight - grid.offsetHeight) * 0.88),
+        ((mobile.matches ? 72 : 84) - rect.top) /
+          Math.max(1, (scrollTrack.offsetHeight - pinned.offsetHeight) * 0.88),
         0,
         1,
       );
@@ -407,7 +409,7 @@ export function initConstructionScene({ hero, grid, track, visual, copy }) {
     stageIndex = -1;
     hero.classList.toggle("construction-static", staticMode() || optIn);
     control.hidden = !(timed() || staticMode());
-    hint.textContent = mobile.matches ? copy.mobileHint : copy.desktopHint;
+    hint.textContent = copy.desktopHint;
     resize();
     updateLoop();
   }
