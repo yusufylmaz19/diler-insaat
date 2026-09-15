@@ -89,9 +89,12 @@ function initMedia() {
   button.onclick = () => {
     const hidden = [...document.querySelectorAll(".media-photo[hidden]")];
     const batch = hidden.slice(0, 12);
-    batch.forEach((photo) => { photo.hidden = false; });
+    batch.forEach((photo) => {
+      photo.hidden = false;
+    });
     const total = document.querySelectorAll(".media-photo").length;
-    $(".media-count").textContent = `${total - hidden.length + batch.length} / ${total} fotoğraf gösteriliyor`;
+    $(".media-count").textContent =
+      `${total - hidden.length + batch.length} / ${total} fotoğraf gösteriliyor`;
     batch[0]?.focus({ preventScroll: true });
     button.hidden = hidden.length <= 12;
   };

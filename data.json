@@ -2,7 +2,7 @@
   "brand": {
     "name": "Diler İnşaat",
     "shortName": "DİLER",
-    "slogan": "Her proje bir imza, her yapı bir güvence.",
+    "slogan": "1981’den beri güvenle yükselen yapılar.",
     "location": "İstanbul",
     "phone": "+90 535 402 47 73",
     "phoneHref": "tel:+905354024773",
@@ -110,34 +110,6 @@
     "title": "Yapının her aşamasında izimiz var.",
     "description": "Uygulamalarımızdan fotoğraf ve videoları aşağıdaki arşivde inceleyebilirsiniz. Proje rotasındaki bilgiler temsilidir.",
     "items": [
-      {
-        "title": "Müstakil Konut",
-        "category": "Anahtar Teslim",
-        "location": "İstanbul · Dummy",
-        "year": "2026",
-        "image": null
-      },
-      {
-        "title": "Dış Cephe Yenileme",
-        "category": "Mantolama & Boya",
-        "location": "Pendik · Dummy",
-        "year": "2026",
-        "image": null
-      },
-      {
-        "title": "Daire Dönüşümü",
-        "category": "Tadilat & Dekorasyon",
-        "location": "Kartal · Dummy",
-        "year": "2025",
-        "image": null
-      },
-      {
-        "title": "Ticari Alan",
-        "category": "Fayans & İnce İşler",
-        "location": "Tuzla · Dummy",
-        "year": "2025",
-        "image": null
-      }
     ],
     "media": [
       {
