@@ -21,8 +21,44 @@
 .construction-hero .hero-copy {
   padding: 24px 0;
 }
+.hero-brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 2vw, 32px);
+  margin: 28px 0 12px;
+}
+.hero-brand-lockup > img {
+  width: clamp(88px, 8vw, 124px);
+  flex: 0 0 auto;
+  filter: drop-shadow(0 16px 22px #6b4d3024);
+}
 .construction-hero h1 {
-  font-size: clamp(58px, 6.2vw, 96px);
+  font-size: clamp(76px, 8.2vw, 132px);
+  line-height: 0.88;
+  margin: 0;
+}
+.hero-slogan {
+  margin: 0 0 18px;
+  color: var(--rust);
+  font-family: Georgia, serif;
+  font-size: clamp(18px, 1.55vw, 24px);
+  font-style: italic;
+}
+.hero-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: -12px 0 24px;
+}
+.hero-socials a {
+  border-bottom: 1px solid #b94f2055;
+  padding: 7px 0;
+  color: var(--rust);
+  font-size: 10px;
+  font-weight: 800;
+}
+.hero-socials a:hover {
+  border-color: var(--rust);
 }
 .construction-hero .hero-actions {
   margin: 25px 0 30px;
@@ -140,8 +176,16 @@
 }
 @media (min-width: 701px) and (max-height: 760px) {
   .construction-hero h1 {
-    font-size: clamp(46px, 5.6vw, 76px);
-    margin: 20px 0;
+    font-size: clamp(62px, 7vw, 96px);
+  }
+  .hero-brand-lockup {
+    margin: 18px 0 8px;
+  }
+  .hero-brand-lockup > img {
+    width: 76px;
+  }
+  .hero-slogan {
+    margin-bottom: 10px;
   }
   .construction-hero .hero-description {
     font-size: 12px;
@@ -169,7 +213,22 @@
     padding: 45px 0 0;
   }
   .construction-hero h1 {
-    font-size: clamp(48px, 14vw, 70px);
+    font-size: clamp(51px, 14vw, 72px);
+  }
+  .hero-brand-lockup {
+    align-items: center;
+    gap: 16px;
+    margin: 22px 0 12px;
+  }
+  .hero-brand-lockup > img {
+    width: clamp(76px, 22vw, 98px);
+  }
+  .hero-slogan {
+    font-size: 18px;
+  }
+  .hero-socials {
+    gap: 5px 16px;
+    margin-top: -8px;
   }
   .construction-hero .build-visual {
     height: 560px;

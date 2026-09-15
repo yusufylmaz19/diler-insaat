@@ -6,21 +6,39 @@
     "location": "İstanbul",
     "phone": "+90 535 402 47 73",
     "phoneHref": "tel:+905354024773",
-    "whatsapp": "https://wa.me/905354024773?text=Merhaba%2C%20projem%20i%C3%A7in%20%C3%BCcretsiz%20ke%C5%9Fif%20talep%20ediyorum."
+    "whatsapp": "https://wa.me/905354024773?text=Merhaba%2C%20projem%20i%C3%A7in%20%C3%BCcretsiz%20ke%C5%9Fif%20talep%20ediyorum.",
+    "instagram": "https://www.instagram.com/chilliskevin/",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Diler%20%C4%B0n%C5%9Faat%20%C4%B0stanbul"
   },
   "navigation": [
-    { "label": "Hizmetler", "href": "#hizmetler" },
-    { "label": "Projeler", "href": "#projeler" },
-    { "label": "Süreç", "href": "#surec" },
-    { "label": "İletişim", "href": "#iletisim" }
+    {
+      "label": "Hizmetler",
+      "href": "#hizmetler"
+    },
+    {
+      "label": "Projeler",
+      "href": "#projeler"
+    },
+    {
+      "label": "Süreç",
+      "href": "#surec"
+    },
+    {
+      "label": "İletişim",
+      "href": "#iletisim"
+    }
   ],
   "hero": {
     "kicker": "ANAHTAR TESLİM YAPI ÇÖZÜMLERİ",
-    "title": "Fikirden anahtara, yapınız emin ellerde.",
+    "title": "Diler İnşaat",
     "description": "Kaba yapıdan son kat boyaya; planlama, uygulama ve teslim süreçlerini tek ekipte birleştiriyoruz.",
     "primaryCta": "Ücretsiz keşif iste",
     "secondaryCta": "Hizmetleri incele",
-    "proof": ["Kaliteli işçilik", "Zamanında teslim", "Uygun fiyat"],
+    "proof": [
+      "Kaliteli işçilik",
+      "Zamanında teslim",
+      "Uygun fiyat"
+    ],
     "visualLabel": "Kat kat yükselen güven",
     "construction": {
       "duration": 24,
@@ -94,7 +112,7 @@
     "index": "03",
     "kicker": "PROJE ROTASI",
     "title": "Yapının her aşamasında izimiz var.",
-    "description": "Fotoğraf arşivi eklendiğinde bu alan proje görsellerini otomatik kullanır. Şimdilik temsili proje bilgileri gösterilmektedir.",
+    "description": "Uygulamalarımızdan fotoğraf ve videoları aşağıdaki arşivde inceleyebilirsiniz. Proje rotasındaki bilgiler temsilidir.",
     "items": [
       {
         "title": "Müstakil Konut",
@@ -125,7 +143,537 @@
         "image": null
       }
     ],
-    "media": []
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/images/projects/1.jpeg",
+        "title": "Proje fotoğrafı 1"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/2.jpeg",
+        "title": "Proje fotoğrafı 2"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/3.jpeg",
+        "title": "Proje fotoğrafı 3"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/4.jpeg",
+        "title": "Proje fotoğrafı 4"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/5.jpeg",
+        "title": "Proje fotoğrafı 5"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/6.jpeg",
+        "title": "Proje fotoğrafı 6"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/7.jpeg",
+        "title": "Proje fotoğrafı 7"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/8.jpeg",
+        "title": "Proje fotoğrafı 8"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/9.jpeg",
+        "title": "Proje fotoğrafı 9"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/10.jpeg",
+        "title": "Proje fotoğrafı 10"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/11.jpeg",
+        "title": "Proje fotoğrafı 11"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/12.jpeg",
+        "title": "Proje fotoğrafı 12"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/13.jpeg",
+        "title": "Proje fotoğrafı 13"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/14.jpeg",
+        "title": "Proje fotoğrafı 14"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/15.jpeg",
+        "title": "Proje fotoğrafı 15"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/16.jpeg",
+        "title": "Proje fotoğrafı 16"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/17.jpeg",
+        "title": "Proje fotoğrafı 17"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/18.jpeg",
+        "title": "Proje fotoğrafı 18"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/19.jpeg",
+        "title": "Proje fotoğrafı 19"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/20.jpeg",
+        "title": "Proje fotoğrafı 20"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/21.jpeg",
+        "title": "Proje fotoğrafı 21"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/22.jpeg",
+        "title": "Proje fotoğrafı 22"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/23.jpeg",
+        "title": "Proje fotoğrafı 23"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/24.jpeg",
+        "title": "Proje fotoğrafı 24"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/25.jpeg",
+        "title": "Proje fotoğrafı 25"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/26.jpeg",
+        "title": "Proje fotoğrafı 26"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/27.jpeg",
+        "title": "Proje fotoğrafı 27"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/28.jpeg",
+        "title": "Proje fotoğrafı 28"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/29.jpeg",
+        "title": "Proje fotoğrafı 29"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/30.jpeg",
+        "title": "Proje fotoğrafı 30"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/31.jpeg",
+        "title": "Proje fotoğrafı 31"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/32.jpeg",
+        "title": "Proje fotoğrafı 32"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/33.jpeg",
+        "title": "Proje fotoğrafı 33"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/34.jpeg",
+        "title": "Proje fotoğrafı 34"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/35.jpeg",
+        "title": "Proje fotoğrafı 35"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/36.jpeg",
+        "title": "Proje fotoğrafı 36"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/37.jpeg",
+        "title": "Proje fotoğrafı 37"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/38.jpeg",
+        "title": "Proje fotoğrafı 38"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/39.jpeg",
+        "title": "Proje fotoğrafı 39"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/40.jpeg",
+        "title": "Proje fotoğrafı 40"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/41.jpeg",
+        "title": "Proje fotoğrafı 41"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/42.jpeg",
+        "title": "Proje fotoğrafı 42"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/43.jpeg",
+        "title": "Proje fotoğrafı 43"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/44.jpeg",
+        "title": "Proje fotoğrafı 44"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/45.jpeg",
+        "title": "Proje fotoğrafı 45"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/46.jpeg",
+        "title": "Proje fotoğrafı 46"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/47.jpeg",
+        "title": "Proje fotoğrafı 47"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/48.jpeg",
+        "title": "Proje fotoğrafı 48"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/49.jpeg",
+        "title": "Proje fotoğrafı 49"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/50.jpeg",
+        "title": "Proje fotoğrafı 50"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/51.jpeg",
+        "title": "Proje fotoğrafı 51"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/52.jpeg",
+        "title": "Proje fotoğrafı 52"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/53.jpeg",
+        "title": "Proje fotoğrafı 53"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/54.jpeg",
+        "title": "Proje fotoğrafı 54"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/55.jpeg",
+        "title": "Proje fotoğrafı 55"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/56.jpeg",
+        "title": "Proje fotoğrafı 56"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/57.jpeg",
+        "title": "Proje fotoğrafı 57"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/58.jpeg",
+        "title": "Proje fotoğrafı 58"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/59.jpeg",
+        "title": "Proje fotoğrafı 59"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/60.jpeg",
+        "title": "Proje fotoğrafı 60"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/61.jpeg",
+        "title": "Proje fotoğrafı 61"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/62.jpeg",
+        "title": "Proje fotoğrafı 62"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/63.jpeg",
+        "title": "Proje fotoğrafı 63"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/64.jpeg",
+        "title": "Proje fotoğrafı 64"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/65.jpeg",
+        "title": "Proje fotoğrafı 65"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/66.jpeg",
+        "title": "Proje fotoğrafı 66"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/67.jpeg",
+        "title": "Proje fotoğrafı 67"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/68.jpeg",
+        "title": "Proje fotoğrafı 68"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/69.jpeg",
+        "title": "Proje fotoğrafı 69"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/70.jpeg",
+        "title": "Proje fotoğrafı 70"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/71.jpeg",
+        "title": "Proje fotoğrafı 71"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/72.jpeg",
+        "title": "Proje fotoğrafı 72"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/73.jpeg",
+        "title": "Proje fotoğrafı 73"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/74.jpeg",
+        "title": "Proje fotoğrafı 74"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/75.jpeg",
+        "title": "Proje fotoğrafı 75"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/76.jpeg",
+        "title": "Proje fotoğrafı 76"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/77.jpeg",
+        "title": "Proje fotoğrafı 77"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/78.jpeg",
+        "title": "Proje fotoğrafı 78"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/79.jpeg",
+        "title": "Proje fotoğrafı 79"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/80.jpeg",
+        "title": "Proje fotoğrafı 80"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/81.jpeg",
+        "title": "Proje fotoğrafı 81"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/82.jpeg",
+        "title": "Proje fotoğrafı 82"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/83.jpeg",
+        "title": "Proje fotoğrafı 83"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/84.jpeg",
+        "title": "Proje fotoğrafı 84"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/85.jpeg",
+        "title": "Proje fotoğrafı 85"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/86.jpeg",
+        "title": "Proje fotoğrafı 86"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/87.jpeg",
+        "title": "Proje fotoğrafı 87"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/88.jpeg",
+        "title": "Proje fotoğrafı 88"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/89.jpeg",
+        "title": "Proje fotoğrafı 89"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/90.jpeg",
+        "title": "Proje fotoğrafı 90"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/91.jpeg",
+        "title": "Proje fotoğrafı 91"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/92.jpeg",
+        "title": "Proje fotoğrafı 92"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/93.jpeg",
+        "title": "Proje fotoğrafı 93"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/94.jpeg",
+        "title": "Proje fotoğrafı 94"
+      },
+      {
+        "type": "image",
+        "src": "assets/images/projects/95.jpeg",
+        "title": "Proje fotoğrafı 95"
+      },
+      {
+        "type": "video",
+        "src": "assets/videos/1.mp4",
+        "title": "Proje videosu 1",
+        "poster": "assets/posters/1.jpg"
+      },
+      {
+        "type": "video",
+        "src": "assets/videos/2.mp4",
+        "title": "Proje videosu 2",
+        "poster": "assets/posters/2.jpg"
+      },
+      {
+        "type": "video",
+        "src": "assets/videos/3.mp4",
+        "title": "Proje videosu 3",
+        "poster": "assets/posters/3.jpg"
+      },
+      {
+        "type": "video",
+        "src": "assets/videos/4.mp4",
+        "title": "Proje videosu 4",
+        "poster": "assets/posters/4.jpg"
+      },
+      {
+        "type": "video",
+        "src": "assets/videos/5.mp4",
+        "title": "Proje videosu 5",
+        "poster": "assets/posters/5.jpg"
+      },
+      {
+        "type": "video",
+        "src": "assets/videos/6.mp4",
+        "title": "Proje videosu 6",
+        "poster": "assets/posters/6.jpg"
+      },
+      {
+        "type": "video",
+        "src": "assets/videos/7.mp4",
+        "title": "Proje videosu 7",
+        "poster": "assets/posters/7.jpg"
+      },
+      {
+        "type": "video",
+        "src": "assets/videos/8.mp4",
+        "title": "Proje videosu 8",
+        "poster": "assets/posters/8.jpg"
+      },
+      {
+        "type": "video",
+        "src": "assets/videos/9.mp4",
+        "title": "Proje videosu 9",
+        "poster": "assets/posters/9.jpg"
+      }
+    ]
   },
   "process": {
     "index": "04",

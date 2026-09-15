@@ -19,4 +19,6 @@ Bu klasörde `python -m http.server 8877` çalıştırın ve `http://localhost:8
 - Proje videoları: `assets/videos/`
 - Video kapakları: `assets/posters/`
 
+Dosyaları ekledikten sonra `python3 scripts/sync-media.py` çalıştırın. Komut fotoğrafları ve videoları içerik listesine kaydeder, aynı isimli video kapaklarını eşleştirir. Yayına alırken medya dosyalarıyla birlikte güncel `data.json`, `script.js` ve `style.css` dosyalarını da yükleyin.
+
 Görselde bulunmayan adres, proje adları, konumları ve yılları dummy olarak işaretlenmiştir. Gerçek bilgiler geldiğinde yalnızca `data.json` düzenlenebilir.

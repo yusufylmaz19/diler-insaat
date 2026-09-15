@@ -2,7 +2,9 @@
 
 - Proje fotoğraflarını `images/projects/` içine ekleyin.
 - Videoları `videos/`, video kapaklarını `posters/` içine ekleyin.
-- Ardından `data.json` içindeki `projects.items` veya `projects.media` listesine dosya yolunu ekleyin.
+- Ardından proje klasöründe `python3 scripts/sync-media.py` çalıştırın. Fotoğraf ve videolar `data.json` içindeki `projects.media` listesine eklenir; aynı isimli video kapağı eşleştirilir (ör. `1.mp4` → `1.jpg`). Mevcut kayıtlar korunur ve tekrar eklenmez.
+- Site statiktir: yalnızca klasöre dosya kopyalamak yeterli değildir. Yeni medya eklediğinizde komutu yeniden çalıştırın ve güncellenen `data.json` dosyasını da siteyle birlikte yükleyin.
+- Alternatif olarak `projects.items` veya `projects.media` listesine dosya yolunu elle ekleyebilirsiniz.
 
 Örnek fotoğraf kaydı:
 
