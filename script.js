@@ -16,13 +16,13 @@ async function start() {
   const sectionHead = (section) =>
     `<div class="section-head reveal"><span class="section-number">/${esc(section.index)}</span><div class="section-title"><div class="eyebrow">${esc(section.kicker)}</div><h2>${esc(section.title)}</h2></div></div>`;
   $("#app").innerHTML = `
-    <header class="header"><div class="header-inner wrap"><a class="brand" href="#top"><img src="assets/logo-mark.svg" alt=""><span><b>${esc(data.brand.shortName)}</b><small>İNŞAAT</small></span></a><nav class="nav" id="nav" aria-label="Ana menü">${data.navigation.map((item) => `<a href="${esc(item.href)}">${esc(item.label)}</a>`).join("")}</nav><a class="header-call" href="${esc(data.brand.phoneHref)}"><span>PROJENİZİ KONUŞALIM</span><strong>${esc(data.brand.phone)}</strong></a><button class="menu-button" aria-controls="nav" aria-expanded="false">Menü</button></div></header>
-    <main id="main"><section class="hero" id="top"><div class="hero-grid wrap"><div class="hero-copy"><div class="eyebrow">${esc(data.hero.kicker)}</div><div class="hero-brand-lockup"><img src="assets/logo-mark.svg" alt=""><h1>${formatHero(data.hero.title)}</h1></div><p class="hero-slogan">${esc(data.brand.slogan)}</p><p class="hero-description">${esc(data.hero.description)}</p><div class="hero-actions"><a class="button" href="${esc(data.brand.whatsapp)}" target="_blank" rel="noopener noreferrer">${esc(data.hero.primaryCta)} ${arrow}</a><a class="text-link" href="#hizmetler">${esc(data.hero.secondaryCta)} ↓</a></div><nav class="hero-socials" aria-label="Sosyal medya ve konum"><a href="${esc(data.brand.whatsapp)}" target="_blank" rel="noopener noreferrer">WhatsApp ${arrow}</a></nav><div class="proof-row">${data.hero.proof.map((item) => `<span class="proof">${esc(item)}</span>`).join("")}</div></div><div class="build-visual" aria-hidden="true"><div class="building"><div class="floor floor-1"><span></span></div><div class="floor floor-2"><span></span></div><div class="floor floor-3"><span></span></div><div class="floor floor-4"></div></div><div class="crane"></div><span class="visual-label">${esc(data.hero.visualLabel)}</span></div></div><span class="scroll-cue">AŞAĞI KAYDIR</span></section>
+    <header class="header"><div class="header-inner wrap"><a class="brand" href="#top"><img src="assets/logo-mark.svg" alt=""><span><b>${esc(data.brand.shortName)}</b><small>İNŞAAT</small></span></a><nav class="nav" id="nav" aria-label="Ana menü">${data.navigation.map((item) => `<a href="${esc(item.href)}">${esc(item.label)}</a>`).join("")}<div class="nav-mobile-contact"><small>PROJENİZİ KONUŞALIM</small><a href="${esc(data.brand.phoneHref)}">${esc(data.brand.phone)} <span aria-hidden="true">↗</span></a></div></nav><a class="header-call" href="${esc(data.brand.phoneHref)}"><span>PROJENİZİ KONUŞALIM</span><strong>${esc(data.brand.phone)}</strong></a><button class="menu-button" aria-controls="nav" aria-expanded="false">Menü</button></div></header>
+    <main id="main"><section class="hero" id="top"><div class="hero-grid wrap"><div class="hero-copy"><div class="eyebrow">${esc(data.hero.kicker)}</div><div class="hero-brand-lockup"><img src="assets/logo-mark.svg" alt=""><h1>${formatHero(data.hero.title)}</h1></div><p class="hero-slogan">${esc(data.brand.slogan)}</p><p class="hero-description">${esc(data.hero.description)}</p><div class="hero-actions"><a class="button" href="${esc(data.brand.whatsapp)}" target="_blank" rel="noopener noreferrer">${esc(data.hero.primaryCta)} ${arrow}</a><a class="text-link" href="#hizmetler">${esc(data.hero.secondaryCta)} ↓</a></div><div class="proof-row">${data.hero.proof.map((item) => `<span class="proof">${esc(item)}</span>`).join("")}</div></div><div class="build-visual" aria-hidden="true"><div class="building"><div class="floor floor-1"><span></span></div><div class="floor floor-2"><span></span></div><div class="floor floor-3"><span></span></div><div class="floor floor-4"></div></div><div class="crane"></div><span class="visual-label">${esc(data.hero.visualLabel)}</span></div></div><span class="scroll-cue">AŞAĞI KAYDIR</span></section>
     <section class="section wrap">${sectionHead(data.intro)}<div class="intro-grid reveal"><p>${esc(data.intro.body)}</p><div class="intro-note">${esc(data.intro.note)}<br><strong>${esc(data.brand.slogan)}</strong></div></div></section>
     <section class="section services" id="hizmetler"><div class="wrap">${sectionHead(data.services)}<div class="service-list">${data.services.items.map((item) => `<article class="service-row reveal"><small>${esc(item.number)}</small><h3>${esc(item.title)}</h3><p>${esc(item.description)}</p><span class="service-icon" aria-hidden="true">↗</span></article>`).join("")}</div></div></section>
     ${data.projects.media.length ? `${renderFeatureShowcase(data.projects.media)}<section class="section media-archive-wrap" id="projeler"><div class="wrap">${renderMedia(data.projects.media)}</div></section>` : '<section class="section"><div class="wrap"><p class="empty-media">Fotoğraf ve video klasörleri hazır. Gerçek medya eklendiğinde arşiv burada otomatik gösterilecek.</p></div></section>'}
     <section class="section wrap" id="surec">${sectionHead(data.process)}<div class="process-grid">${data.process.steps.map((step, index) => `<article class="process-step reveal"><span>0${index + 1}</span><h3>${esc(step.title)}</h3><p>${esc(step.description)}</p></article>`).join("")}</div><div class="faq"><h2>${esc(data.faq.title)}</h2><div>${data.faq.items.map((item, index) => `<details ${index === 0 ? "open" : ""}><summary>${esc(item.question)}</summary><p>${esc(item.answer)}</p></details>`).join("")}</div></div></section>
-    <section class="contact" id="iletisim"><div class="wrap"><div class="contact-grid"><div><div class="eyebrow">${esc(data.contact.kicker)}</div><h2>${esc(data.contact.title)}</h2><p>${esc(data.contact.description)}</p></div><div class="contact-actions"><a class="button button-light" href="${esc(data.brand.whatsapp)}" target="_blank" rel="noopener noreferrer">${esc(data.contact.primaryCta)} ${arrow}</a><span>${esc(data.contact.phoneLabel)}</span><a class="contact-phone" href="${esc(data.brand.phoneHref)}">${esc(data.brand.phone)}</a></div></div><div class="contact-meta"><span>${esc(data.contact.address)}</span><span>${esc(data.contact.hours)}</span></div><footer class="footer"><span>${esc(data.contact.copyright)}</span><a href="#top">Başa dön ↑</a></footer><div class="developer-credit"><span>${esc(data.contact.developer.label)} <a href="${esc(data.contact.developer.website)}" target="_blank" rel="noopener noreferrer"><strong>${esc(data.contact.developer.name)}</strong></a></span><div><a href="${esc(data.contact.developer.phoneHref)}">${esc(data.contact.developer.phone)}</a><a href="${esc(data.contact.developer.instagram)}" target="_blank" rel="noopener noreferrer">${esc(data.contact.developer.instagramLabel)} ↗</a></div></div></div></section></main>${renderLightbox()}`;
+    <section class="contact" id="iletisim"><div class="wrap"><div class="contact-grid"><div><div class="eyebrow">${esc(data.contact.kicker)}</div><h2>${esc(data.contact.title)}</h2><p>${esc(data.contact.description)}</p></div><div class="contact-actions"><span>${esc(data.contact.phoneLabel)}</span><a class="contact-phone" href="${esc(data.brand.phoneHref)}">${esc(data.brand.phone)}</a></div></div><div class="contact-meta"><span>${esc(data.contact.address)}</span><span>${esc(data.contact.hours)}</span></div><footer class="footer"><span>${esc(data.contact.copyright)}</span><a href="#top">Başa dön ↑</a></footer><div class="developer-credit"><span>${esc(data.contact.developer.label)} <a href="${esc(data.contact.developer.website)}" target="_blank" rel="noopener noreferrer"><strong>${esc(data.contact.developer.name)}</strong></a></span><div><a href="${esc(data.contact.developer.phoneHref)}">${esc(data.contact.developer.phone)}</a><a href="${esc(data.contact.developer.instagram)}" target="_blank" rel="noopener noreferrer">${esc(data.contact.developer.instagramLabel)} ↗</a></div></div></div></section></main>${renderLightbox()}`;
   initMenu();
   initRoute();
   initMedia();
@@ -220,6 +220,14 @@ function initLightbox(items) {
 function initMenu() {
   const button = $(".menu-button"),
     nav = $(".nav");
+
+  const closeMenu = () => {
+    button.setAttribute("aria-expanded", "false");
+    button.textContent = "Menü";
+    nav.classList.remove("open");
+    document.body.classList.remove("menu-open");
+  };
+
   button.onclick = () => {
     const open = button.getAttribute("aria-expanded") !== "true";
     button.setAttribute("aria-expanded", String(open));
@@ -227,12 +235,16 @@ function initMenu() {
     nav.classList.toggle("open", open);
     document.body.classList.toggle("menu-open", open);
   };
-  nav.onclick = () => {
-    button.setAttribute("aria-expanded", "false");
-    button.textContent = "Menü";
-    nav.classList.remove("open");
-    document.body.classList.remove("menu-open");
-  };
+  nav.onclick = closeMenu;
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && nav.classList.contains("open")) {
+      closeMenu();
+      button.focus();
+    }
+  });
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 700 && nav.classList.contains("open")) closeMenu();
+  });
 }
 function initRoute() {
   const route = $(".project-route");
