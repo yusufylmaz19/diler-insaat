@@ -20,7 +20,7 @@ async function start() {
     <main id="main"><section class="hero" id="top"><div class="hero-grid wrap"><div class="hero-copy"><div class="eyebrow">${esc(data.hero.kicker)}</div><div class="hero-brand-lockup"><img src="assets/logo-mark.svg" alt=""><h1>${formatHero(data.hero.title)}</h1></div><p class="hero-slogan">${esc(data.brand.slogan)}</p><p class="hero-description">${esc(data.hero.description)}</p><div class="hero-actions"><a class="button" href="${esc(data.brand.whatsapp)}" target="_blank" rel="noopener noreferrer">${esc(data.hero.primaryCta)} ${arrow}</a><a class="text-link" href="#hizmetler">${esc(data.hero.secondaryCta)} ↓</a></div><nav class="hero-socials" aria-label="Sosyal medya ve konum"><a href="${esc(data.brand.instagram)}" target="_blank" rel="noopener noreferrer">Instagram ${arrow}</a><a href="${esc(data.brand.whatsapp)}" target="_blank" rel="noopener noreferrer">WhatsApp ${arrow}</a><a href="${esc(data.brand.maps)}" target="_blank" rel="noopener noreferrer">Google Haritalar ${arrow}</a></nav><div class="proof-row">${data.hero.proof.map((item) => `<span class="proof">${esc(item)}</span>`).join("")}</div></div><div class="build-visual" aria-hidden="true"><div class="building"><div class="floor floor-1"><span></span></div><div class="floor floor-2"><span></span></div><div class="floor floor-3"><span></span></div><div class="floor floor-4"></div></div><div class="crane"></div><span class="visual-label">${esc(data.hero.visualLabel)}</span></div></div><span class="scroll-cue">AŞAĞI KAYDIR</span></section>
     <section class="section wrap">${sectionHead(data.intro)}<div class="intro-grid reveal"><p>${esc(data.intro.body)}</p><div class="intro-note">${esc(data.intro.note)}<br><strong>${esc(data.brand.slogan)}</strong></div></div></section>
     <section class="section services" id="hizmetler"><div class="wrap">${sectionHead(data.services)}<div class="service-list">${data.services.items.map((item) => `<article class="service-row reveal"><small>${esc(item.number)}</small><h3>${esc(item.title)}</h3><p>${esc(item.description)}</p><span class="service-icon" aria-hidden="true">↗</span></article>`).join("")}</div></div></section>
-    <section class="section projects" id="projeler"><div class="wrap projects-head"><div>${sectionHead(data.projects)}</div><p>${esc(data.projects.description)}</p></div><div class="route-shell"><div class="route-line"></div><div class="project-route" tabindex="0" aria-label="Proje rotası">${data.projects.items.map((item, index) => projectCard(item, index)).join("")}</div><div class="route-controls"><button data-route="prev" aria-label="Önceki proje">←</button><button data-route="next" aria-label="Sonraki proje">→</button></div>${data.projects.media.length ? renderMedia(data.projects.media) : '<p class="empty-media">Fotoğraf ve video klasörleri hazır. Gerçek medya eklendiğinde arşiv burada otomatik gösterilecek.</p>'}</div></section>
+    ${data.projects.media.length ? `<section class="section media-archive-wrap"><div class="wrap">${renderMedia(data.projects.media)}</div></section>` : '<section class="section"><div class="wrap"><p class="empty-media">Fotoğraf ve video klasörleri hazır. Gerçek medya eklendiğinde arşiv burada otomatik gösterilecek.</p></div></section>'}
     <section class="section wrap" id="surec">${sectionHead(data.process)}<div class="process-grid">${data.process.steps.map((step, index) => `<article class="process-step reveal"><span>0${index + 1}</span><h3>${esc(step.title)}</h3><p>${esc(step.description)}</p></article>`).join("")}</div><div class="faq"><h2>${esc(data.faq.title)}</h2><div>${data.faq.items.map((item, index) => `<details ${index === 0 ? "open" : ""}><summary>${esc(item.question)}</summary><p>${esc(item.answer)}</p></details>`).join("")}</div></div></section>
     <section class="contact" id="iletisim"><div class="wrap"><div class="contact-grid"><div><div class="eyebrow">${esc(data.contact.kicker)}</div><h2>${esc(data.contact.title)}</h2><p>${esc(data.contact.description)}</p></div><div class="contact-actions"><a class="button button-light" href="${esc(data.brand.whatsapp)}" target="_blank" rel="noopener noreferrer">${esc(data.contact.primaryCta)} ${arrow}</a><span>${esc(data.contact.phoneLabel)}</span><a class="contact-phone" href="${esc(data.brand.phoneHref)}">${esc(data.brand.phone)}</a></div></div><div class="contact-meta"><span>${esc(data.contact.address)}</span><span>${esc(data.contact.hours)}</span></div><footer class="footer"><span>${esc(data.contact.copyright)}</span><a href="#top">Başa dön ↑</a></footer><div class="developer-credit"><span>${esc(data.contact.developer.label)} <a href="${esc(data.contact.developer.website)}" target="_blank" rel="noopener noreferrer"><strong>${esc(data.contact.developer.name)}</strong></a></span><div><a href="${esc(data.contact.developer.phoneHref)}">${esc(data.contact.developer.phone)}</a><a href="${esc(data.contact.developer.instagram)}" target="_blank" rel="noopener noreferrer">${esc(data.contact.developer.instagramLabel)} ↗</a></div></div></div></section></main>`;
   initMenu();
@@ -117,22 +117,32 @@ function initMenu() {
   };
 }
 function initRoute() {
-  const route = $(".project-route"),
-    line = $(".route-line");
+  const route = $(".project-route");
+  if (!route) return;
+
+  const line = $(".route-line");
+  const prevButton = $('[data-route="prev"]');
+  const nextButton = $('[data-route="next"]');
+
   const move = (direction) =>
     route.scrollBy({
       left: direction * route.clientWidth * 0.72,
       behavior: "smooth",
     });
-  $('[data-route="prev"]').onclick = () => move(-1);
-  $('[data-route="next"]').onclick = () => move(1);
+
+  prevButton && (prevButton.onclick = () => move(-1));
+  nextButton && (nextButton.onclick = () => move(1));
+
   const update = () => {
     const max = route.scrollWidth - route.clientWidth;
-    line.style.setProperty(
-      "--route-progress",
-      max ? route.scrollLeft / max : 1,
-    );
+    if (line) {
+      line.style.setProperty(
+        "--route-progress",
+        max ? route.scrollLeft / max : 1,
+      );
+    }
   };
+
   route.addEventListener("scroll", update, { passive: true });
   update();
 }
