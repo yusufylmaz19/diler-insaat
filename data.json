@@ -1,0 +1,98 @@
+{
+  "brand": {
+    "name": "Diler İnşaat",
+    "shortName": "DİLER",
+    "slogan": "Her proje bir imza, her yapı bir güvence.",
+    "location": "İstanbul",
+    "phone": "+90 535 402 47 73",
+    "phoneHref": "tel:+905354024773",
+    "whatsapp": "https://wa.me/905354024773?text=Merhaba%2C%20projem%20i%C3%A7in%20%C3%BCcretsiz%20ke%C5%9Fif%20talep%20ediyorum."
+  },
+  "navigation": [
+    { "label": "Hizmetler", "href": "#hizmetler" },
+    { "label": "Projeler", "href": "#projeler" },
+    { "label": "Süreç", "href": "#surec" },
+    { "label": "İletişim", "href": "#iletisim" }
+  ],
+  "hero": {
+    "kicker": "ANAHTAR TESLİM YAPI ÇÖZÜMLERİ",
+    "title": "Fikirden anahtara, yapınız emin ellerde.",
+    "description": "Kaba yapıdan son kat boyaya; planlama, uygulama ve teslim süreçlerini tek ekipte birleştiriyoruz.",
+    "primaryCta": "Ücretsiz keşif iste",
+    "secondaryCta": "Hizmetleri incele",
+    "proof": ["Kaliteli işçilik", "Zamanında teslim", "Uygun fiyat"],
+    "visualLabel": "Kat kat yükselen güven"
+  },
+  "intro": {
+    "index": "01",
+    "kicker": "BİR YAPIDAN FAZLASI",
+    "title": "İhtiyacınızı dinler, yapının bütününü çözeriz.",
+    "body": "Yeni yapı, kapsamlı tadilat veya tek bir uygulama… Her işi doğru ekip, doğru malzeme ve net bir iş programıyla yönetiriz. Sizin için karmaşık süreci sadeleştirir, teslim gününe kadar sorumluluğu üstleniriz.",
+    "note": "İstanbul ve çevresinde hizmet"
+  },
+  "services": {
+    "index": "02",
+    "kicker": "UZMANLIKLARIMIZ",
+    "title": "Tek ekip. Baştan sona çözüm.",
+    "items": [
+      { "number": "01", "title": "Anahtar teslim inşaat", "description": "Projelendirmeden kaba yapıya, ince işlerden teslimata kadar tüm sürecin koordinasyonu." },
+      { "number": "02", "title": "Tadilat & dekorasyon", "description": "Ev, ofis ve ticari alanlar için işlevsel planlama, yenileme ve iç mekân uygulamaları." },
+      { "number": "03", "title": "Dış cephe & mantolama", "description": "Isı yalıtımı, dış cephe yenileme, boya ve koruyucu kaplama uygulamaları." },
+      { "number": "04", "title": "Sıva & boya", "description": "İç ve dış yüzeylerde düzgün altyapı, temiz işçilik ve uzun ömürlü boya çözümleri." },
+      { "number": "05", "title": "Fayans & seramik", "description": "Banyo, mutfak, zemin ve duvarlarda hassas ölçü, doğru derz ve dengeli yerleşim." },
+      { "number": "06", "title": "Parke uygulamaları", "description": "Yaşam alanlarında zemine uygun laminat ve parke seçimi, süpürgelik ve montaj işleri." }
+    ]
+  },
+  "projects": {
+    "index": "03",
+    "kicker": "PROJE ROTASI",
+    "title": "Yapının her aşamasında izimiz var.",
+    "description": "Fotoğraf arşivi eklendiğinde bu alan proje görsellerini otomatik kullanır. Şimdilik temsili proje bilgileri gösterilmektedir.",
+    "items": [
+      { "title": "Müstakil Konut", "category": "Anahtar Teslim", "location": "İstanbul · Dummy", "year": "2026", "image": null },
+      { "title": "Dış Cephe Yenileme", "category": "Mantolama & Boya", "location": "Pendik · Dummy", "year": "2026", "image": null },
+      { "title": "Daire Dönüşümü", "category": "Tadilat & Dekorasyon", "location": "Kartal · Dummy", "year": "2025", "image": null },
+      { "title": "Ticari Alan", "category": "Fayans & İnce İşler", "location": "Tuzla · Dummy", "year": "2025", "image": null }
+    ],
+    "media": []
+  },
+  "process": {
+    "index": "04",
+    "kicker": "ÇALIŞMA ŞEKLİMİZ",
+    "title": "Belirsizliği azaltan dört net adım.",
+    "steps": [
+      { "title": "Keşif", "description": "Alanı inceler, ihtiyaçları ve teknik koşulları yerinde belirleriz." },
+      { "title": "Plan & teklif", "description": "İş kapsamını, malzemeleri, süreyi ve bütçeyi açıkça paylaşırız." },
+      { "title": "Uygulama", "description": "Sahayı düzenli tutar, işleri doğru sırayla ve kontrollü biçimde yürütürüz." },
+      { "title": "Teslim", "description": "Son kontrolleri birlikte yapar, tamamlanan işi kullanıma hazır teslim ederiz." }
+    ]
+  },
+  "faq": {
+    "title": "Sık sorulanlar",
+    "items": [
+      { "question": "Ücretsiz keşif yapıyor musunuz?", "answer": "Evet. İstanbul ve yakın çevresi için keşif planlaması yapıyoruz. Kesin kapsam ve uygunluk telefon görüşmesinde netleştirilir." },
+      { "question": "Anahtar teslim hizmete neler dahil?", "answer": "Projenin ihtiyacına göre kaba yapı, tesisat koordinasyonu, sıva, boya, zemin, seramik ve dekorasyon işleri tek plan altında yönetilebilir." },
+      { "question": "Malzemeyi kim temin ediyor?", "answer": "Malzeme temini Diler İnşaat tarafından yapılabilir veya müşterinin seçtiği ürünlerle çalışılabilir. Teklifte bu ayrım açıkça belirtilir." },
+      { "question": "İşin süresi nasıl belirleniyor?", "answer": "Keşif sonrası iş kalemlerine göre bir uygulama takvimi hazırlanır. Süre; alan, malzeme tedariki ve uygulama kapsamına bağlıdır." }
+    ]
+  },
+  "contact": {
+    "kicker": "PROJENİZİ KONUŞALIM",
+    "title": "İlk adım, doğru bir keşif.",
+    "description": "Yapmak istediğiniz işi kısaca anlatın; uygun gün ve saati birlikte planlayalım.",
+    "primaryCta": "WhatsApp’tan yazın",
+    "phoneLabel": "Hemen arayın",
+    "address": "İstanbul, Türkiye · Detaylı adres eklenecek",
+    "hours": "Pazartesi – Cumartesi · 08:00 – 18:00",
+    "copyright": "© 2026 Diler İnşaat. Tüm hakları saklıdır.",
+    "developer": {
+      "label": "Site tasarımı ve geliştirme",
+      "name": "Yusuf Yılmaz",
+      "website": "https://www.yusufyilmaz.tech/",
+      "phone": "+90 537 255 30 88",
+      "phoneHref": "tel:+905372553088",
+      "instagramLabel": "@chilliskevin",
+      "instagram": "https://www.instagram.com/chilliskevin/"
+    }
+  }
+}
