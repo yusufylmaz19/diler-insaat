@@ -17,7 +17,7 @@ async function start() {
     `<div class="section-head reveal"><span class="section-number">/${esc(section.index)}</span><div class="section-title"><div class="eyebrow">${esc(section.kicker)}</div><h2>${esc(section.title)}</h2></div></div>`;
   $("#app").innerHTML = `
     <header class="header"><div class="header-inner wrap"><a class="brand" href="#top"><img src="assets/logo-mark.svg" alt=""><span><b>${esc(data.brand.shortName)}</b><small>İNŞAAT</small></span></a><nav class="nav" id="nav" aria-label="Ana menü">${data.navigation.map((item) => `<a href="${esc(item.href)}">${esc(item.label)}</a>`).join("")}</nav><a class="header-call" href="${esc(data.brand.phoneHref)}"><span>PROJENİZİ KONUŞALIM</span><strong>${esc(data.brand.phone)}</strong></a><button class="menu-button" aria-controls="nav" aria-expanded="false">Menü</button></div></header>
-    <main id="main"><section class="hero" id="top"><div class="hero-grid wrap"><div class="hero-copy"><div class="eyebrow">${esc(data.hero.kicker)}</div><div class="hero-brand-lockup"><img src="assets/logo-mark.svg" alt=""><h1>${formatHero(data.hero.title)}</h1></div><p class="hero-slogan">${esc(data.brand.slogan)}</p><p class="hero-description">${esc(data.hero.description)}</p><div class="hero-actions"><a class="button" href="${esc(data.brand.whatsapp)}" target="_blank" rel="noopener noreferrer">${esc(data.hero.primaryCta)} ${arrow}</a><a class="text-link" href="#hizmetler">${esc(data.hero.secondaryCta)} ↓</a></div><nav class="hero-socials" aria-label="Sosyal medya ve konum"><a href="${esc(data.brand.instagram)}" target="_blank" rel="noopener noreferrer">Instagram ${arrow}</a><a href="${esc(data.brand.whatsapp)}" target="_blank" rel="noopener noreferrer">WhatsApp ${arrow}</a><a href="${esc(data.brand.maps)}" target="_blank" rel="noopener noreferrer">Google Haritalar ${arrow}</a></nav><div class="proof-row">${data.hero.proof.map((item) => `<span class="proof">${esc(item)}</span>`).join("")}</div></div><div class="build-visual" aria-hidden="true"><div class="building"><div class="floor floor-1"><span></span></div><div class="floor floor-2"><span></span></div><div class="floor floor-3"><span></span></div><div class="floor floor-4"></div></div><div class="crane"></div><span class="visual-label">${esc(data.hero.visualLabel)}</span></div></div><span class="scroll-cue">AŞAĞI KAYDIR</span></section>
+    <main id="main"><section class="hero" id="top"><div class="hero-grid wrap"><div class="hero-copy"><div class="eyebrow">${esc(data.hero.kicker)}</div><div class="hero-brand-lockup"><img src="assets/logo-mark.svg" alt=""><h1>${formatHero(data.hero.title)}</h1></div><p class="hero-slogan">${esc(data.brand.slogan)}</p><p class="hero-description">${esc(data.hero.description)}</p><div class="hero-actions"><a class="button" href="${esc(data.brand.whatsapp)}" target="_blank" rel="noopener noreferrer">${esc(data.hero.primaryCta)} ${arrow}</a><a class="text-link" href="#hizmetler">${esc(data.hero.secondaryCta)} ↓</a></div><nav class="hero-socials" aria-label="Sosyal medya ve konum"><a href="${esc(data.brand.whatsapp)}" target="_blank" rel="noopener noreferrer">WhatsApp ${arrow}</a></nav><div class="proof-row">${data.hero.proof.map((item) => `<span class="proof">${esc(item)}</span>`).join("")}</div></div><div class="build-visual" aria-hidden="true"><div class="building"><div class="floor floor-1"><span></span></div><div class="floor floor-2"><span></span></div><div class="floor floor-3"><span></span></div><div class="floor floor-4"></div></div><div class="crane"></div><span class="visual-label">${esc(data.hero.visualLabel)}</span></div></div><span class="scroll-cue">AŞAĞI KAYDIR</span></section>
     <section class="section wrap">${sectionHead(data.intro)}<div class="intro-grid reveal"><p>${esc(data.intro.body)}</p><div class="intro-note">${esc(data.intro.note)}<br><strong>${esc(data.brand.slogan)}</strong></div></div></section>
     <section class="section services" id="hizmetler"><div class="wrap">${sectionHead(data.services)}<div class="service-list">${data.services.items.map((item) => `<article class="service-row reveal"><small>${esc(item.number)}</small><h3>${esc(item.title)}</h3><p>${esc(item.description)}</p><span class="service-icon" aria-hidden="true">↗</span></article>`).join("")}</div></div></section>
     ${data.projects.media.length ? `<section class="section media-archive-wrap"><div class="wrap">${renderMedia(data.projects.media)}</div></section>` : '<section class="section"><div class="wrap"><p class="empty-media">Fotoğraf ve video klasörleri hazır. Gerçek medya eklendiğinde arşiv burada otomatik gösterilecek.</p></div></section>'}
@@ -71,7 +71,15 @@ function projectCard(item, index) {
 function renderMedia(items) {
   const photos = items.filter((item) => item.type !== "video");
   const videos = items.filter((item) => item.type === "video");
-  return `<div class="media-archive wrap">${photos.length ? `<section aria-labelledby="photos-title"><h3 id="photos-title">Fotoğraf arşivi <small>${photos.length} fotoğraf</small></h3><div class="media-grid" id="photo-grid">${photos.map((item, index) => `<a class="media-photo" href="${esc(item.src)}" target="_blank" rel="noopener noreferrer"${index >= 12 ? " hidden" : ""}><img src="${esc(item.src)}" alt="${esc(item.title || "Proje fotoğrafı")}" loading="lazy" decoding="async"></a>`).join("")}</div>${photos.length > 12 ? '<button class="button media-more" aria-controls="photo-grid">Daha fazla fotoğraf göster</button>' : ""}<p class="media-count" role="status">${Math.min(12, photos.length)} / ${photos.length} fotoğraf gösteriliyor</p></section>` : ""}${videos.length ? `<section aria-labelledby="videos-title"><h3 id="videos-title">Video arşivi <small>${videos.length} video</small></h3><div class="media-grid">${videos.map((item) => `<figure class="media-video"><video src="${esc(item.src)}"${item.poster ? ` poster="${esc(item.poster)}"` : ""} aria-label="${esc(item.title || "Proje videosu")}" preload="none" playsinline controls></video><figcaption>${esc(item.title || "Proje videosu")}</figcaption></figure>`).join("")}</div></section>` : ""}</div>`;
+  const cards = items.map((item, index) => {
+    const kind = item.type === "video" ? "videos" : "photos";
+    if (kind === "videos") {
+      return `<figure class="media-item media-video" data-media-kind="videos"${index >= 8 ? " hidden" : ""}><video src="${esc(item.src)}"${item.poster ? ` poster="${esc(item.poster)}"` : ""} aria-label="${esc(item.title || "Proje videosu")}" preload="none" playsinline controls></video></figure>`;
+    }
+    return `<a class="media-item media-photo" data-media-kind="photos" href="${esc(item.src)}" target="_blank" rel="noopener noreferrer"${index >= 8 ? " hidden" : ""}><img src="${esc(item.src)}" alt="${esc(item.title || "Proje fotoğrafı")}" loading="lazy" decoding="async"></a>`;
+  }).join("");
+
+  return `<div class="media-archive wrap" data-media-filter="all"><div class="media-toolbar"><div class="media-tabs" role="group" aria-label="Arşiv filtreleri"><button type="button" class="media-tab active" aria-pressed="true" data-media-tab="all">Tüm arşiv</button>${photos.length ? '<button type="button" class="media-tab" aria-pressed="false" data-media-tab="photos">Fotoğraflar</button>' : ""}${videos.length ? '<button type="button" class="media-tab" aria-pressed="false" data-media-tab="videos">Videolar</button>' : ""}</div><p class="media-count" role="status" aria-live="polite">${Math.min(8, items.length)} / ${items.length} uygulama karesi</p></div><div class="media-grid" id="media-grid">${cards}</div><div class="media-more-wrap">${items.length > 8 ? '<button type="button" class="button media-more" aria-controls="media-grid">Daha Fazla Göster</button>' : ""}</div></div>`;
 }
 function initMedia() {
   document.querySelectorAll("video").forEach((video) => {
@@ -84,20 +92,49 @@ function initMedia() {
     video.addEventListener("volumechange", silence);
     video.addEventListener("play", silence);
   });
-  const button = $(".media-more");
-  if (!button) return;
-  button.onclick = () => {
-    const hidden = [...document.querySelectorAll(".media-photo[hidden]")];
-    const batch = hidden.slice(0, 12);
-    batch.forEach((photo) => {
-      photo.hidden = false;
+
+  const archive = $(".media-archive");
+  if (!archive) return;
+
+  const cards = [...archive.querySelectorAll(".media-item")];
+  const moreButton = $(".media-more", archive);
+  const count = $(".media-count", archive);
+  let filter = "all";
+  let visibleLimit = 8;
+
+  const update = () => {
+    const filtered = cards.filter((card) => filter === "all" || card.dataset.mediaKind === filter);
+    cards.forEach((card) => {
+      const position = filtered.indexOf(card);
+      card.hidden = position < 0 || position >= visibleLimit;
     });
-    const total = document.querySelectorAll(".media-photo").length;
-    $(".media-count").textContent =
-      `${total - hidden.length + batch.length} / ${total} fotoğraf gösteriliyor`;
-    batch[0]?.focus({ preventScroll: true });
-    button.hidden = hidden.length <= 12;
+    const visible = Math.min(visibleLimit, filtered.length);
+    if (count) count.textContent = `${visible} / ${filtered.length} uygulama karesi`;
+    if (moreButton) moreButton.hidden = visible >= filtered.length;
   };
+
+  archive.querySelectorAll(".media-tab").forEach((tab) => {
+    tab.addEventListener("click", () => {
+      filter = tab.dataset.mediaTab;
+      visibleLimit = 8;
+      archive.dataset.mediaFilter = filter;
+      archive.querySelectorAll(".media-tab").forEach((item) => {
+        const active = item === tab;
+        item.classList.toggle("active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+      update();
+    });
+  });
+
+  if (moreButton) {
+    moreButton.addEventListener("click", () => {
+      visibleLimit += 8;
+      update();
+    });
+  }
+
+  update();
 }
 function initMenu() {
   const button = $(".menu-button"),
