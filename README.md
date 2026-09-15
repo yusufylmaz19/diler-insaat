@@ -1,5 +1,11 @@
 # Diler İnşaat web sitesi
 
+## Yapım animasyonu
+
+`construction.js` yerel Three.js ile iki katlı konutun yapımını gösterir: temel/donatı, alt kolonlar, ara döşeme, üst kolonlar, üst döşeme, duvarlar, kapı/pencereler, cephe ve çatı. Masaüstünde kaydırma ilerlemesi sahneyi yönetir; yapı tamamlanırken alan sabit kalır. Mobilde sahne görünürken 24 saniyelik otomatik oynatım başlar; alan ekran dışındayken veya sekme gizliyken durur. Durdur/devam et ve yeniden oynatma düğmesi vardır.
+
+Metinler ve mobil süre `data.json` → `hero.construction` üzerinden düzenlenir. Hareket azaltma tercihinde tamamlanmış yapı ve isteğe bağlı başlatma sunulur. WebGL yüklenmezse yerel SVG görünümü kullanılır. Stil kuralları `construction.css` içindedir; Three.js `vendor/` klasöründen yüklenir.
+
 Bağımsız, statik web projesi. Derleme adımı gerekmez.
 
 ## Önizleme

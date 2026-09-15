@@ -21,7 +21,30 @@
     "primaryCta": "Ücretsiz keşif iste",
     "secondaryCta": "Hizmetleri incele",
     "proof": ["Kaliteli işçilik", "Zamanında teslim", "Uygun fiyat"],
-    "visualLabel": "Kat kat yükselen güven"
+    "visualLabel": "Kat kat yükselen güven",
+    "construction": {
+      "duration": 24,
+      "title": "Temelden teslimata",
+      "desktopHint": "Yapının yükselişini kaydırarak izleyin",
+      "mobileHint": "Yapının yükselişini adım adım izleyin",
+      "pause": "Durdur",
+      "resume": "Devam et",
+      "replay": "Yeniden izle",
+      "start": "Animasyonu başlat",
+      "complete": "Yapı tamamlandı",
+      "fallback": "İki katlı konutun mimari görünümü",
+      "stages": [
+        "Temel ve donatı",
+        "Zemin kat kolonları",
+        "Ara kat döşemesi",
+        "Üst kat kolonları",
+        "Üst döşeme",
+        "Duvar örümü",
+        "Kapı ve pencereler",
+        "Cephe sıvası ve boya",
+        "Çatı ve son detaylar"
+      ]
+    }
   },
   "intro": {
     "index": "01",
@@ -35,12 +58,36 @@
     "kicker": "UZMANLIKLARIMIZ",
     "title": "Tek ekip. Baştan sona çözüm.",
     "items": [
-      { "number": "01", "title": "Anahtar teslim inşaat", "description": "Projelendirmeden kaba yapıya, ince işlerden teslimata kadar tüm sürecin koordinasyonu." },
-      { "number": "02", "title": "Tadilat & dekorasyon", "description": "Ev, ofis ve ticari alanlar için işlevsel planlama, yenileme ve iç mekân uygulamaları." },
-      { "number": "03", "title": "Dış cephe & mantolama", "description": "Isı yalıtımı, dış cephe yenileme, boya ve koruyucu kaplama uygulamaları." },
-      { "number": "04", "title": "Sıva & boya", "description": "İç ve dış yüzeylerde düzgün altyapı, temiz işçilik ve uzun ömürlü boya çözümleri." },
-      { "number": "05", "title": "Fayans & seramik", "description": "Banyo, mutfak, zemin ve duvarlarda hassas ölçü, doğru derz ve dengeli yerleşim." },
-      { "number": "06", "title": "Parke uygulamaları", "description": "Yaşam alanlarında zemine uygun laminat ve parke seçimi, süpürgelik ve montaj işleri." }
+      {
+        "number": "01",
+        "title": "Anahtar teslim inşaat",
+        "description": "Projelendirmeden kaba yapıya, ince işlerden teslimata kadar tüm sürecin koordinasyonu."
+      },
+      {
+        "number": "02",
+        "title": "Tadilat & dekorasyon",
+        "description": "Ev, ofis ve ticari alanlar için işlevsel planlama, yenileme ve iç mekân uygulamaları."
+      },
+      {
+        "number": "03",
+        "title": "Dış cephe & mantolama",
+        "description": "Isı yalıtımı, dış cephe yenileme, boya ve koruyucu kaplama uygulamaları."
+      },
+      {
+        "number": "04",
+        "title": "Sıva & boya",
+        "description": "İç ve dış yüzeylerde düzgün altyapı, temiz işçilik ve uzun ömürlü boya çözümleri."
+      },
+      {
+        "number": "05",
+        "title": "Fayans & seramik",
+        "description": "Banyo, mutfak, zemin ve duvarlarda hassas ölçü, doğru derz ve dengeli yerleşim."
+      },
+      {
+        "number": "06",
+        "title": "Parke uygulamaları",
+        "description": "Yaşam alanlarında zemine uygun laminat ve parke seçimi, süpürgelik ve montaj işleri."
+      }
     ]
   },
   "projects": {
@@ -49,10 +96,34 @@
     "title": "Yapının her aşamasında izimiz var.",
     "description": "Fotoğraf arşivi eklendiğinde bu alan proje görsellerini otomatik kullanır. Şimdilik temsili proje bilgileri gösterilmektedir.",
     "items": [
-      { "title": "Müstakil Konut", "category": "Anahtar Teslim", "location": "İstanbul · Dummy", "year": "2026", "image": null },
-      { "title": "Dış Cephe Yenileme", "category": "Mantolama & Boya", "location": "Pendik · Dummy", "year": "2026", "image": null },
-      { "title": "Daire Dönüşümü", "category": "Tadilat & Dekorasyon", "location": "Kartal · Dummy", "year": "2025", "image": null },
-      { "title": "Ticari Alan", "category": "Fayans & İnce İşler", "location": "Tuzla · Dummy", "year": "2025", "image": null }
+      {
+        "title": "Müstakil Konut",
+        "category": "Anahtar Teslim",
+        "location": "İstanbul · Dummy",
+        "year": "2026",
+        "image": null
+      },
+      {
+        "title": "Dış Cephe Yenileme",
+        "category": "Mantolama & Boya",
+        "location": "Pendik · Dummy",
+        "year": "2026",
+        "image": null
+      },
+      {
+        "title": "Daire Dönüşümü",
+        "category": "Tadilat & Dekorasyon",
+        "location": "Kartal · Dummy",
+        "year": "2025",
+        "image": null
+      },
+      {
+        "title": "Ticari Alan",
+        "category": "Fayans & İnce İşler",
+        "location": "Tuzla · Dummy",
+        "year": "2025",
+        "image": null
+      }
     ],
     "media": []
   },
@@ -61,19 +132,43 @@
     "kicker": "ÇALIŞMA ŞEKLİMİZ",
     "title": "Belirsizliği azaltan dört net adım.",
     "steps": [
-      { "title": "Keşif", "description": "Alanı inceler, ihtiyaçları ve teknik koşulları yerinde belirleriz." },
-      { "title": "Plan & teklif", "description": "İş kapsamını, malzemeleri, süreyi ve bütçeyi açıkça paylaşırız." },
-      { "title": "Uygulama", "description": "Sahayı düzenli tutar, işleri doğru sırayla ve kontrollü biçimde yürütürüz." },
-      { "title": "Teslim", "description": "Son kontrolleri birlikte yapar, tamamlanan işi kullanıma hazır teslim ederiz." }
+      {
+        "title": "Keşif",
+        "description": "Alanı inceler, ihtiyaçları ve teknik koşulları yerinde belirleriz."
+      },
+      {
+        "title": "Plan & teklif",
+        "description": "İş kapsamını, malzemeleri, süreyi ve bütçeyi açıkça paylaşırız."
+      },
+      {
+        "title": "Uygulama",
+        "description": "Sahayı düzenli tutar, işleri doğru sırayla ve kontrollü biçimde yürütürüz."
+      },
+      {
+        "title": "Teslim",
+        "description": "Son kontrolleri birlikte yapar, tamamlanan işi kullanıma hazır teslim ederiz."
+      }
     ]
   },
   "faq": {
     "title": "Sık sorulanlar",
     "items": [
-      { "question": "Ücretsiz keşif yapıyor musunuz?", "answer": "Evet. İstanbul ve yakın çevresi için keşif planlaması yapıyoruz. Kesin kapsam ve uygunluk telefon görüşmesinde netleştirilir." },
-      { "question": "Anahtar teslim hizmete neler dahil?", "answer": "Projenin ihtiyacına göre kaba yapı, tesisat koordinasyonu, sıva, boya, zemin, seramik ve dekorasyon işleri tek plan altında yönetilebilir." },
-      { "question": "Malzemeyi kim temin ediyor?", "answer": "Malzeme temini Diler İnşaat tarafından yapılabilir veya müşterinin seçtiği ürünlerle çalışılabilir. Teklifte bu ayrım açıkça belirtilir." },
-      { "question": "İşin süresi nasıl belirleniyor?", "answer": "Keşif sonrası iş kalemlerine göre bir uygulama takvimi hazırlanır. Süre; alan, malzeme tedariki ve uygulama kapsamına bağlıdır." }
+      {
+        "question": "Ücretsiz keşif yapıyor musunuz?",
+        "answer": "Evet. İstanbul ve yakın çevresi için keşif planlaması yapıyoruz. Kesin kapsam ve uygunluk telefon görüşmesinde netleştirilir."
+      },
+      {
+        "question": "Anahtar teslim hizmete neler dahil?",
+        "answer": "Projenin ihtiyacına göre kaba yapı, tesisat koordinasyonu, sıva, boya, zemin, seramik ve dekorasyon işleri tek plan altında yönetilebilir."
+      },
+      {
+        "question": "Malzemeyi kim temin ediyor?",
+        "answer": "Malzeme temini Diler İnşaat tarafından yapılabilir veya müşterinin seçtiği ürünlerle çalışılabilir. Teklifte bu ayrım açıkça belirtilir."
+      },
+      {
+        "question": "İşin süresi nasıl belirleniyor?",
+        "answer": "Keşif sonrası iş kalemlerine göre bir uygulama takvimi hazırlanır. Süre; alan, malzeme tedariki ve uygulama kapsamına bağlıdır."
+      }
     ]
   },
   "contact": {
