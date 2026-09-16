@@ -71,19 +71,19 @@ function projectCard(item, index) {
 }
 function renderFeatureShowcase(items) {
   const photos = items.filter((item) => item.type !== "video");
-  const picks = [8, 39, 72, 94]
-    .map((index) => photos[index])
-    .filter(Boolean);
+  const picks = [4, 2, 33, 47].map((index) => photos[index]).filter(Boolean);
   const captions = [
     ["İnce işçilik, güçlü sonuç", "İÇ MEKÂN UYGULAMALARI"],
     ["Detaylarda bütünlük", "TADİLAT & DEKORASYON"],
     ["Gücün görünür hâli", "ÇELİK KONSTRÜKSİYON"],
     ["Her aşamada özen", "UYGULAMA & TESLİM"],
   ];
-  const figures = picks.map((item, index) => {
-    const mediaIndex = items.indexOf(item);
-    return `<figure class="work-feature reveal"><button class="work-feature-open" type="button" data-lightbox-index="${mediaIndex}" aria-label="${esc(captions[index][0])} görselini büyüt"><img src="${esc(item.src)}" alt="${esc(captions[index][0])}" loading="lazy" decoding="async"><span aria-hidden="true">↗</span></button><figcaption><strong>${esc(captions[index][0])}</strong><small>${esc(captions[index][1])}</small><em>/ 0${index + 1}</em></figcaption></figure>`;
-  }).join("");
+  const figures = picks
+    .map((item, index) => {
+      const mediaIndex = items.indexOf(item);
+      return `<figure class="work-feature reveal"><button class="work-feature-open" type="button" data-lightbox-index="${mediaIndex}" aria-label="${esc(captions[index][0])} görselini büyüt"><img src="${esc(item.src)}" alt="${esc(captions[index][0])}" loading="lazy" decoding="async"><span aria-hidden="true">↗</span></button><figcaption><strong>${esc(captions[index][0])}</strong><small>${esc(captions[index][1])}</small><em>/ 0${index + 1}</em></figcaption></figure>`;
+    })
+    .join("");
   return `<section class="section work-showcase" aria-labelledby="work-showcase-title"><div class="wrap"><header class="work-showcase-head"><h2 id="work-showcase-title">İşimiz,<br>kendini anlatır.</h2><p>Çizgilerimiz mekâna dönüştüğü anlar.<br>Uygulamalarımızdan detaylara ve tamamlanan yaşam alanlarına bir bakış.</p></header><div class="work-showcase-grid">${figures}</div></div></section>`;
 }
 
@@ -94,13 +94,15 @@ function renderLightbox() {
 function renderMedia(items) {
   const photos = items.filter((item) => item.type !== "video");
   const videos = items.filter((item) => item.type === "video");
-  const cards = items.map((item, index) => {
-    const kind = item.type === "video" ? "videos" : "photos";
-    if (kind === "videos") {
-      return `<button class="media-item media-video" type="button" data-media-kind="videos" data-lightbox-index="${index}" aria-label="${esc(item.title || "Proje videosu")} videosunu aç"${index >= 8 ? " hidden" : ""}><img src="${esc(item.poster || "assets/construction-fallback.svg")}" alt="" loading="lazy"><span class="media-play" aria-hidden="true">▶</span></button>`;
-    }
-    return `<button class="media-item media-photo" type="button" data-media-kind="photos" data-lightbox-index="${index}" aria-label="${esc(item.title || "Proje fotoğrafı")} görselini büyüt"${index >= 8 ? " hidden" : ""}><img src="${esc(item.src)}" alt="${esc(item.title || "Proje fotoğrafı")}" loading="lazy" decoding="async"></button>`;
-  }).join("");
+  const cards = items
+    .map((item, index) => {
+      const kind = item.type === "video" ? "videos" : "photos";
+      if (kind === "videos") {
+        return `<button class="media-item media-video" type="button" data-media-kind="videos" data-lightbox-index="${index}" aria-label="${esc(item.title || "Proje videosu")} videosunu aç"${index >= 8 ? " hidden" : ""}><img src="${esc(item.poster || "assets/construction-fallback.svg")}" alt="" loading="lazy"><span class="media-play" aria-hidden="true">▶</span></button>`;
+      }
+      return `<button class="media-item media-photo" type="button" data-media-kind="photos" data-lightbox-index="${index}" aria-label="${esc(item.title || "Proje fotoğrafı")} görselini büyüt"${index >= 8 ? " hidden" : ""}><img src="${esc(item.src)}" alt="${esc(item.title || "Proje fotoğrafı")}" loading="lazy" decoding="async"></button>`;
+    })
+    .join("");
 
   return `<div class="media-archive wrap" data-media-filter="all"><div class="media-toolbar"><div class="media-tabs" role="group" aria-label="Arşiv filtreleri"><button type="button" class="media-tab active" aria-pressed="true" data-media-tab="all">Tüm arşiv</button>${photos.length ? '<button type="button" class="media-tab" aria-pressed="false" data-media-tab="photos">Fotoğraflar</button>' : ""}${videos.length ? '<button type="button" class="media-tab" aria-pressed="false" data-media-tab="videos">Videolar</button>' : ""}</div><p class="media-count" role="status" aria-live="polite">${Math.min(8, items.length)} / ${items.length} uygulama karesi</p></div><div class="media-grid" id="media-grid">${cards}</div><div class="media-more-wrap">${items.length > 8 ? '<button type="button" class="button media-more" aria-controls="media-grid">Daha Fazla Göster</button>' : ""}</div></div>`;
 }
@@ -126,13 +128,16 @@ function initMedia() {
   let visibleLimit = 8;
 
   const update = () => {
-    const filtered = cards.filter((card) => filter === "all" || card.dataset.mediaKind === filter);
+    const filtered = cards.filter(
+      (card) => filter === "all" || card.dataset.mediaKind === filter,
+    );
     cards.forEach((card) => {
       const position = filtered.indexOf(card);
       card.hidden = position < 0 || position >= visibleLimit;
     });
     const visible = Math.min(visibleLimit, filtered.length);
-    if (count) count.textContent = `${visible} / ${filtered.length} uygulama karesi`;
+    if (count)
+      count.textContent = `${visible} / ${filtered.length} uygulama karesi`;
     if (moreButton) moreButton.hidden = visible >= filtered.length;
   };
 
@@ -171,12 +176,15 @@ function initLightbox(items) {
 
   const render = () => {
     const item = items[currentIndex];
-    const label = item.title || (item.type === "video" ? "Proje videosu" : "Proje fotoğrafı");
+    const label =
+      item.title ||
+      (item.type === "video" ? "Proje videosu" : "Proje fotoğrafı");
     title.textContent = label;
     counter.textContent = `${currentIndex + 1} / ${items.length}`;
-    stage.innerHTML = item.type === "video"
-      ? `<video src="${esc(item.src)}"${item.poster ? ` poster="${esc(item.poster)}"` : ""} aria-label="${esc(label)}" controls autoplay playsinline></video>`
-      : `<img src="${esc(item.src)}" alt="${esc(label)}">`;
+    stage.innerHTML =
+      item.type === "video"
+        ? `<video src="${esc(item.src)}"${item.poster ? ` poster="${esc(item.poster)}"` : ""} aria-label="${esc(label)}" controls autoplay playsinline></video>`
+        : `<img src="${esc(item.src)}" alt="${esc(label)}">`;
   };
 
   const move = (direction) => {
@@ -197,8 +205,12 @@ function initLightbox(items) {
   });
 
   $(".lightbox-close", dialog).addEventListener("click", close);
-  dialog.querySelector('[data-lightbox-direction="prev"]').addEventListener("click", () => move(-1));
-  dialog.querySelector('[data-lightbox-direction="next"]').addEventListener("click", () => move(1));
+  dialog
+    .querySelector('[data-lightbox-direction="prev"]')
+    .addEventListener("click", () => move(-1));
+  dialog
+    .querySelector('[data-lightbox-direction="next"]')
+    .addEventListener("click", () => move(1));
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) close();
   });

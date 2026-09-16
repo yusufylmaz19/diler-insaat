@@ -104,8 +104,7 @@
     "kicker": "PROJE ROTASI",
     "title": "Yapının her aşamasında izimiz var.",
     "description": "Uygulamalarımızdan fotoğraf ve videoları aşağıdaki arşivde inceleyebilirsiniz. Proje rotasındaki bilgiler temsilidir.",
-    "items": [
-    ],
+    "items": [],
     "media": [
       {
         "type": "image",
@@ -581,61 +580,6 @@
         "type": "image",
         "src": "assets/images/projects/95.jpeg",
         "title": "Proje fotoğrafı 95"
-      },
-      {
-        "type": "image",
-        "src": "assets/images/projects/96.jpeg",
-        "title": "Proje fotoğrafı 96"
-      },
-      {
-        "type": "image",
-        "src": "assets/images/projects/97.jpeg",
-        "title": "Proje fotoğrafı 97"
-      },
-      {
-        "type": "image",
-        "src": "assets/images/projects/98.jpeg",
-        "title": "Proje fotoğrafı 98"
-      },
-      {
-        "type": "image",
-        "src": "assets/images/projects/99.jpeg",
-        "title": "Proje fotoğrafı 99"
-      },
-      {
-        "type": "image",
-        "src": "assets/images/projects/100.jpeg",
-        "title": "Proje fotoğrafı 100"
-      },
-      {
-        "type": "image",
-        "src": "assets/images/projects/101.jpeg",
-        "title": "Proje fotoğrafı 101"
-      },
-      {
-        "type": "image",
-        "src": "assets/images/projects/102.jpeg",
-        "title": "Proje fotoğrafı 102"
-      },
-      {
-        "type": "image",
-        "src": "assets/images/projects/103.jpeg",
-        "title": "Proje fotoğrafı 103"
-      },
-      {
-        "type": "image",
-        "src": "assets/images/projects/104.jpeg",
-        "title": "Proje fotoğrafı 104"
-      },
-      {
-        "type": "image",
-        "src": "assets/images/projects/105.jpeg",
-        "title": "Proje fotoğrafı 105"
-      },
-      {
-        "type": "image",
-        "src": "assets/images/projects/106.jpeg",
-        "title": "Proje fotoğrafı 106"
       },
       {
         "type": "video",
