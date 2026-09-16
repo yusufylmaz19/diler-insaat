@@ -51,7 +51,7 @@
   margin: 28px 0 12px;
 }
 .hero-brand-lockup > img {
-  width: clamp(88px, 8vw, 124px);
+  width: clamp(112px, 10vw, 160px);
   flex: 0 0 auto;
   filter: drop-shadow(0 16px 22px #6b4d3024);
 }
@@ -205,7 +205,7 @@
     margin: 18px 0 8px;
   }
   .hero-brand-lockup > img {
-    width: 76px;
+    width: 96px;
   }
   .hero-slogan {
     margin-bottom: 10px;
@@ -244,7 +244,7 @@
     margin: 22px 0 12px;
   }
   .hero-brand-lockup > img {
-    width: clamp(76px, 22vw, 98px);
+    width: clamp(88px, 25vw, 112px);
   }
   .hero-slogan {
     font-size: 18px;
