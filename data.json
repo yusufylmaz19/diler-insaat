@@ -40,7 +40,11 @@
     "description": "Kaba yapıdan son kat boyaya; planlama, uygulama ve teslim süreçlerini tek ekipte birleştiriyoruz.",
     "primaryCta": "WhatsApp’tan iletişime geçin",
     "secondaryCta": "Hizmetleri incele",
-    "proof": ["Kaliteli işçilik", "Zamanında teslim", "Uygun fiyat"],
+    "proof": [
+      "Kaliteli işçilik",
+      "Zamanında teslim",
+      "Uygun fiyat"
+    ],
     "visualLabel": "Kat kat yükselen güven",
     "construction": {
       "duration": 24,
@@ -114,532 +118,755 @@
     "media": [
       {
         "type": "image",
-        "src": "assets/images/projects/1.jpeg",
-        "title": "Proje fotoğrafı 1"
+        "src": "assets/inşaat/1.jpeg",
+        "title": "İnşaat uygulaması 1",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/2.jpeg",
-        "title": "Proje fotoğrafı 2"
+        "src": "assets/iç mimari/1.jpeg",
+        "title": "İç Mimari uygulaması 1",
+        "category": "İç Mimari"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/3.jpeg",
-        "title": "Proje fotoğrafı 3"
+        "src": "assets/asma tavan-alçıpan/1.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 1",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/4.jpeg",
-        "title": "Proje fotoğrafı 4"
+        "src": "assets/laminant parke/1.jpeg",
+        "title": "Laminant Parke uygulaması 1",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/5.jpeg",
-        "title": "Proje fotoğrafı 5"
+        "src": "assets/inşaat/2.jpeg",
+        "title": "İnşaat uygulaması 2",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/6.jpeg",
-        "title": "Proje fotoğrafı 6"
+        "src": "assets/iç mimari/2.jpeg",
+        "title": "İç Mimari uygulaması 2",
+        "category": "İç Mimari"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/7.jpeg",
-        "title": "Proje fotoğrafı 7"
+        "src": "assets/asma tavan-alçıpan/2.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 2",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/8.jpeg",
-        "title": "Proje fotoğrafı 8"
+        "src": "assets/laminant parke/2.jpeg",
+        "title": "Laminant Parke uygulaması 2",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/9.jpeg",
-        "title": "Proje fotoğrafı 9"
+        "src": "assets/inşaat/3.jpeg",
+        "title": "İnşaat uygulaması 3",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/10.jpeg",
-        "title": "Proje fotoğrafı 10"
+        "src": "assets/iç mimari/3.jpeg",
+        "title": "İç Mimari uygulaması 3",
+        "category": "İç Mimari"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/11.jpeg",
-        "title": "Proje fotoğrafı 11"
+        "src": "assets/asma tavan-alçıpan/3.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 3",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/12.jpeg",
-        "title": "Proje fotoğrafı 12"
+        "src": "assets/laminant parke/3.jpeg",
+        "title": "Laminant Parke uygulaması 3",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/13.jpeg",
-        "title": "Proje fotoğrafı 13"
+        "src": "assets/inşaat/4.jpeg",
+        "title": "İnşaat uygulaması 4",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/14.jpeg",
-        "title": "Proje fotoğrafı 14"
+        "src": "assets/iç mimari/4.jpeg",
+        "title": "İç Mimari uygulaması 4",
+        "category": "İç Mimari"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/15.jpeg",
-        "title": "Proje fotoğrafı 15"
+        "src": "assets/asma tavan-alçıpan/4.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 4",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/16.jpeg",
-        "title": "Proje fotoğrafı 16"
+        "src": "assets/laminant parke/4.jpeg",
+        "title": "Laminant Parke uygulaması 4",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/17.jpeg",
-        "title": "Proje fotoğrafı 17"
+        "src": "assets/inşaat/5.jpeg",
+        "title": "İnşaat uygulaması 5",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/18.jpeg",
-        "title": "Proje fotoğrafı 18"
+        "src": "assets/iç mimari/5.jpeg",
+        "title": "İç Mimari uygulaması 5",
+        "category": "İç Mimari"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/19.jpeg",
-        "title": "Proje fotoğrafı 19"
+        "src": "assets/asma tavan-alçıpan/5.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 5",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/20.jpeg",
-        "title": "Proje fotoğrafı 20"
+        "src": "assets/laminant parke/5.jpeg",
+        "title": "Laminant Parke uygulaması 5",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/21.jpeg",
-        "title": "Proje fotoğrafı 21"
+        "src": "assets/inşaat/6.jpeg",
+        "title": "İnşaat uygulaması 6",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/22.jpeg",
-        "title": "Proje fotoğrafı 22"
+        "src": "assets/iç mimari/6.jpeg",
+        "title": "İç Mimari uygulaması 6",
+        "category": "İç Mimari"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/23.jpeg",
-        "title": "Proje fotoğrafı 23"
+        "src": "assets/asma tavan-alçıpan/6.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 6",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/24.jpeg",
-        "title": "Proje fotoğrafı 24"
+        "src": "assets/laminant parke/6.jpeg",
+        "title": "Laminant Parke uygulaması 6",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/25.jpeg",
-        "title": "Proje fotoğrafı 25"
+        "src": "assets/inşaat/7.jpeg",
+        "title": "İnşaat uygulaması 7",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/26.jpeg",
-        "title": "Proje fotoğrafı 26"
+        "src": "assets/iç mimari/7.jpeg",
+        "title": "İç Mimari uygulaması 7",
+        "category": "İç Mimari"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/27.jpeg",
-        "title": "Proje fotoğrafı 27"
+        "src": "assets/asma tavan-alçıpan/7.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 7",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/28.jpeg",
-        "title": "Proje fotoğrafı 28"
+        "src": "assets/laminant parke/7.jpeg",
+        "title": "Laminant Parke uygulaması 7",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/29.jpeg",
-        "title": "Proje fotoğrafı 29"
+        "src": "assets/inşaat/8.jpeg",
+        "title": "İnşaat uygulaması 8",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/30.jpeg",
-        "title": "Proje fotoğrafı 30"
+        "src": "assets/iç mimari/8.jpeg",
+        "title": "İç Mimari uygulaması 8",
+        "category": "İç Mimari"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/31.jpeg",
-        "title": "Proje fotoğrafı 31"
+        "src": "assets/asma tavan-alçıpan/8.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 8",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/32.jpeg",
-        "title": "Proje fotoğrafı 32"
+        "src": "assets/laminant parke/8.jpeg",
+        "title": "Laminant Parke uygulaması 8",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/33.jpeg",
-        "title": "Proje fotoğrafı 33"
+        "src": "assets/inşaat/9.jpeg",
+        "title": "İnşaat uygulaması 9",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/34.jpeg",
-        "title": "Proje fotoğrafı 34"
+        "src": "assets/iç mimari/9.jpeg",
+        "title": "İç Mimari uygulaması 9",
+        "category": "İç Mimari"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/35.jpeg",
-        "title": "Proje fotoğrafı 35"
+        "src": "assets/asma tavan-alçıpan/9.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 9",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/36.jpeg",
-        "title": "Proje fotoğrafı 36"
+        "src": "assets/laminant parke/9.jpeg",
+        "title": "Laminant Parke uygulaması 9",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/37.jpeg",
-        "title": "Proje fotoğrafı 37"
+        "src": "assets/inşaat/10.jpeg",
+        "title": "İnşaat uygulaması 10",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/38.jpeg",
-        "title": "Proje fotoğrafı 38"
+        "src": "assets/iç mimari/10.jpeg",
+        "title": "İç Mimari uygulaması 10",
+        "category": "İç Mimari"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/39.jpeg",
-        "title": "Proje fotoğrafı 39"
+        "src": "assets/asma tavan-alçıpan/10.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 10",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/40.jpeg",
-        "title": "Proje fotoğrafı 40"
+        "src": "assets/laminant parke/10.jpeg",
+        "title": "Laminant Parke uygulaması 10",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/41.jpeg",
-        "title": "Proje fotoğrafı 41"
+        "src": "assets/inşaat/11.jpeg",
+        "title": "İnşaat uygulaması 11",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/42.jpeg",
-        "title": "Proje fotoğrafı 42"
+        "src": "assets/asma tavan-alçıpan/11.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 11",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/43.jpeg",
-        "title": "Proje fotoğrafı 43"
+        "src": "assets/laminant parke/11.jpeg",
+        "title": "Laminant Parke uygulaması 11",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/44.jpeg",
-        "title": "Proje fotoğrafı 44"
+        "src": "assets/inşaat/12.jpeg",
+        "title": "İnşaat uygulaması 12",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/45.jpeg",
-        "title": "Proje fotoğrafı 45"
+        "src": "assets/asma tavan-alçıpan/12.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 12",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/46.jpeg",
-        "title": "Proje fotoğrafı 46"
+        "src": "assets/laminant parke/12.jpeg",
+        "title": "Laminant Parke uygulaması 12",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/47.jpeg",
-        "title": "Proje fotoğrafı 47"
+        "src": "assets/inşaat/13.jpeg",
+        "title": "İnşaat uygulaması 13",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/48.jpeg",
-        "title": "Proje fotoğrafı 48"
+        "src": "assets/asma tavan-alçıpan/13.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 13",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/49.jpeg",
-        "title": "Proje fotoğrafı 49"
+        "src": "assets/laminant parke/13.jpeg",
+        "title": "Laminant Parke uygulaması 13",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/50.jpeg",
-        "title": "Proje fotoğrafı 50"
+        "src": "assets/inşaat/14.jpeg",
+        "title": "İnşaat uygulaması 14",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/51.jpeg",
-        "title": "Proje fotoğrafı 51"
+        "src": "assets/asma tavan-alçıpan/14.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 14",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/52.jpeg",
-        "title": "Proje fotoğrafı 52"
+        "src": "assets/laminant parke/14.jpeg",
+        "title": "Laminant Parke uygulaması 14",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/53.jpeg",
-        "title": "Proje fotoğrafı 53"
+        "src": "assets/inşaat/15.jpeg",
+        "title": "İnşaat uygulaması 15",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/54.jpeg",
-        "title": "Proje fotoğrafı 54"
+        "src": "assets/asma tavan-alçıpan/15.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 15",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/55.jpeg",
-        "title": "Proje fotoğrafı 55"
+        "src": "assets/laminant parke/15.jpeg",
+        "title": "Laminant Parke uygulaması 15",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/56.jpeg",
-        "title": "Proje fotoğrafı 56"
+        "src": "assets/inşaat/16.jpeg",
+        "title": "İnşaat uygulaması 16",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/57.jpeg",
-        "title": "Proje fotoğrafı 57"
+        "src": "assets/asma tavan-alçıpan/16.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 16",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/58.jpeg",
-        "title": "Proje fotoğrafı 58"
+        "src": "assets/laminant parke/16.jpeg",
+        "title": "Laminant Parke uygulaması 16",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/59.jpeg",
-        "title": "Proje fotoğrafı 59"
+        "src": "assets/inşaat/17.jpeg",
+        "title": "İnşaat uygulaması 17",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/60.jpeg",
-        "title": "Proje fotoğrafı 60"
+        "src": "assets/asma tavan-alçıpan/17.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 17",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/61.jpeg",
-        "title": "Proje fotoğrafı 61"
+        "src": "assets/laminant parke/17.jpeg",
+        "title": "Laminant Parke uygulaması 17",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/62.jpeg",
-        "title": "Proje fotoğrafı 62"
+        "src": "assets/inşaat/18.jpeg",
+        "title": "İnşaat uygulaması 18",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/63.jpeg",
-        "title": "Proje fotoğrafı 63"
+        "src": "assets/asma tavan-alçıpan/18.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 18",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/64.jpeg",
-        "title": "Proje fotoğrafı 64"
+        "src": "assets/laminant parke/18.jpeg",
+        "title": "Laminant Parke uygulaması 18",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/65.jpeg",
-        "title": "Proje fotoğrafı 65"
+        "src": "assets/inşaat/19.jpeg",
+        "title": "İnşaat uygulaması 19",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/66.jpeg",
-        "title": "Proje fotoğrafı 66"
+        "src": "assets/asma tavan-alçıpan/19.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 19",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/67.jpeg",
-        "title": "Proje fotoğrafı 67"
+        "src": "assets/laminant parke/19.jpeg",
+        "title": "Laminant Parke uygulaması 19",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/68.jpeg",
-        "title": "Proje fotoğrafı 68"
+        "src": "assets/inşaat/20.jpeg",
+        "title": "İnşaat uygulaması 20",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/69.jpeg",
-        "title": "Proje fotoğrafı 69"
+        "src": "assets/asma tavan-alçıpan/20.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 20",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/70.jpeg",
-        "title": "Proje fotoğrafı 70"
+        "src": "assets/laminant parke/20.jpeg",
+        "title": "Laminant Parke uygulaması 20",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/71.jpeg",
-        "title": "Proje fotoğrafı 71"
+        "src": "assets/inşaat/21.jpeg",
+        "title": "İnşaat uygulaması 21",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/72.jpeg",
-        "title": "Proje fotoğrafı 72"
+        "src": "assets/asma tavan-alçıpan/21.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 21",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/73.jpeg",
-        "title": "Proje fotoğrafı 73"
+        "src": "assets/laminant parke/21.jpeg",
+        "title": "Laminant Parke uygulaması 21",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/74.jpeg",
-        "title": "Proje fotoğrafı 74"
+        "src": "assets/inşaat/22.jpeg",
+        "title": "İnşaat uygulaması 22",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/75.jpeg",
-        "title": "Proje fotoğrafı 75"
+        "src": "assets/asma tavan-alçıpan/22.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 22",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/76.jpeg",
-        "title": "Proje fotoğrafı 76"
+        "src": "assets/laminant parke/22.jpeg",
+        "title": "Laminant Parke uygulaması 22",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/77.jpeg",
-        "title": "Proje fotoğrafı 77"
+        "src": "assets/inşaat/23.jpeg",
+        "title": "İnşaat uygulaması 23",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/78.jpeg",
-        "title": "Proje fotoğrafı 78"
+        "src": "assets/asma tavan-alçıpan/23.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 23",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/79.jpeg",
-        "title": "Proje fotoğrafı 79"
+        "src": "assets/laminant parke/23.jpeg",
+        "title": "Laminant Parke uygulaması 23",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/80.jpeg",
-        "title": "Proje fotoğrafı 80"
+        "src": "assets/inşaat/24.jpeg",
+        "title": "İnşaat uygulaması 24",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/81.jpeg",
-        "title": "Proje fotoğrafı 81"
+        "src": "assets/asma tavan-alçıpan/24.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 24",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/82.jpeg",
-        "title": "Proje fotoğrafı 82"
+        "src": "assets/laminant parke/24.jpeg",
+        "title": "Laminant Parke uygulaması 24",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/83.jpeg",
-        "title": "Proje fotoğrafı 83"
+        "src": "assets/inşaat/25.jpeg",
+        "title": "İnşaat uygulaması 25",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/84.jpeg",
-        "title": "Proje fotoğrafı 84"
+        "src": "assets/asma tavan-alçıpan/25.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 25",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/85.jpeg",
-        "title": "Proje fotoğrafı 85"
+        "src": "assets/laminant parke/25.jpeg",
+        "title": "Laminant Parke uygulaması 25",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/86.jpeg",
-        "title": "Proje fotoğrafı 86"
+        "src": "assets/inşaat/26.jpeg",
+        "title": "İnşaat uygulaması 26",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/87.jpeg",
-        "title": "Proje fotoğrafı 87"
+        "src": "assets/asma tavan-alçıpan/26.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 26",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/88.jpeg",
-        "title": "Proje fotoğrafı 88"
+        "src": "assets/laminant parke/26.jpeg",
+        "title": "Laminant Parke uygulaması 26",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/89.jpeg",
-        "title": "Proje fotoğrafı 89"
+        "src": "assets/inşaat/27.jpeg",
+        "title": "İnşaat uygulaması 27",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/90.jpeg",
-        "title": "Proje fotoğrafı 90"
+        "src": "assets/asma tavan-alçıpan/27.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 27",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/91.jpeg",
-        "title": "Proje fotoğrafı 91"
+        "src": "assets/laminant parke/27.jpeg",
+        "title": "Laminant Parke uygulaması 27",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/92.jpeg",
-        "title": "Proje fotoğrafı 92"
+        "src": "assets/inşaat/28.jpeg",
+        "title": "İnşaat uygulaması 28",
+        "category": "İnşaat"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/93.jpeg",
-        "title": "Proje fotoğrafı 93"
+        "src": "assets/asma tavan-alçıpan/28.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 28",
+        "category": "Alçıpan Asma Tavan"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/94.jpeg",
-        "title": "Proje fotoğrafı 94"
+        "src": "assets/laminant parke/28.jpeg",
+        "title": "Laminant Parke uygulaması 28",
+        "category": "Laminant Parke"
       },
       {
         "type": "image",
-        "src": "assets/images/projects/95.jpeg",
-        "title": "Proje fotoğrafı 95"
+        "src": "assets/inşaat/29.jpeg",
+        "title": "İnşaat uygulaması 29",
+        "category": "İnşaat"
+      },
+      {
+        "type": "image",
+        "src": "assets/asma tavan-alçıpan/29.jpeg",
+        "title": "Alçıpan Asma Tavan uygulaması 29",
+        "category": "Alçıpan Asma Tavan"
+      },
+      {
+        "type": "image",
+        "src": "assets/laminant parke/29.jpeg",
+        "title": "Laminant Parke uygulaması 29",
+        "category": "Laminant Parke"
+      },
+      {
+        "type": "image",
+        "src": "assets/inşaat/30.jpeg",
+        "title": "İnşaat uygulaması 30",
+        "category": "İnşaat"
+      },
+      {
+        "type": "image",
+        "src": "assets/laminant parke/30.jpeg",
+        "title": "Laminant Parke uygulaması 30",
+        "category": "Laminant Parke"
+      },
+      {
+        "type": "image",
+        "src": "assets/inşaat/31.jpeg",
+        "title": "İnşaat uygulaması 31",
+        "category": "İnşaat"
+      },
+      {
+        "type": "image",
+        "src": "assets/laminant parke/31.jpeg",
+        "title": "Laminant Parke uygulaması 31",
+        "category": "Laminant Parke"
+      },
+      {
+        "type": "image",
+        "src": "assets/inşaat/32.jpeg",
+        "title": "İnşaat uygulaması 32",
+        "category": "İnşaat"
+      },
+      {
+        "type": "image",
+        "src": "assets/laminant parke/32.jpeg",
+        "title": "Laminant Parke uygulaması 32",
+        "category": "Laminant Parke"
+      },
+      {
+        "type": "image",
+        "src": "assets/inşaat/33.jpeg",
+        "title": "İnşaat uygulaması 33",
+        "category": "İnşaat"
+      },
+      {
+        "type": "image",
+        "src": "assets/laminant parke/33.jpeg",
+        "title": "Laminant Parke uygulaması 33",
+        "category": "Laminant Parke"
+      },
+      {
+        "type": "image",
+        "src": "assets/inşaat/34.jpeg",
+        "title": "İnşaat uygulaması 34",
+        "category": "İnşaat"
+      },
+      {
+        "type": "image",
+        "src": "assets/laminant parke/34.jpeg",
+        "title": "Laminant Parke uygulaması 34",
+        "category": "Laminant Parke"
+      },
+      {
+        "type": "image",
+        "src": "assets/inşaat/35.jpeg",
+        "title": "İnşaat uygulaması 35",
+        "category": "İnşaat"
+      },
+      {
+        "type": "image",
+        "src": "assets/laminant parke/35.jpeg",
+        "title": "Laminant Parke uygulaması 35",
+        "category": "Laminant Parke"
+      },
+      {
+        "type": "image",
+        "src": "assets/inşaat/36.jpeg",
+        "title": "İnşaat uygulaması 36",
+        "category": "İnşaat"
+      },
+      {
+        "type": "image",
+        "src": "assets/inşaat/37.jpeg",
+        "title": "İnşaat uygulaması 37",
+        "category": "İnşaat"
+      },
+      {
+        "type": "image",
+        "src": "assets/inşaat/38.jpeg",
+        "title": "İnşaat uygulaması 38",
+        "category": "İnşaat"
+      },
+      {
+        "type": "image",
+        "src": "assets/inşaat/39.jpeg",
+        "title": "İnşaat uygulaması 39",
+        "category": "İnşaat"
+      },
+      {
+        "type": "image",
+        "src": "assets/inşaat/40.jpeg",
+        "title": "İnşaat uygulaması 40",
+        "category": "İnşaat"
+      },
+      {
+        "type": "image",
+        "src": "assets/inşaat/41.jpeg",
+        "title": "İnşaat uygulaması 41",
+        "category": "İnşaat"
+      },
+      {
+        "type": "image",
+        "src": "assets/inşaat/42.jpeg",
+        "title": "İnşaat uygulaması 42",
+        "category": "İnşaat"
       },
       {
         "type": "video",
         "src": "assets/videos/1.mp4",
         "title": "Proje videosu 1",
+        "category": "Videolar",
         "poster": "assets/posters/1.jpg"
       },
       {
         "type": "video",
         "src": "assets/videos/2.mp4",
         "title": "Proje videosu 2",
+        "category": "Videolar",
         "poster": "assets/posters/2.jpg"
       },
       {
         "type": "video",
         "src": "assets/videos/3.mp4",
         "title": "Proje videosu 3",
+        "category": "Videolar",
         "poster": "assets/posters/3.jpg"
       },
       {
         "type": "video",
         "src": "assets/videos/4.mp4",
         "title": "Proje videosu 4",
+        "category": "Videolar",
         "poster": "assets/posters/4.jpg"
       },
       {
         "type": "video",
         "src": "assets/videos/5.mp4",
         "title": "Proje videosu 5",
+        "category": "Videolar",
         "poster": "assets/posters/5.jpg"
       },
       {
         "type": "video",
         "src": "assets/videos/6.mp4",
         "title": "Proje videosu 6",
+        "category": "Videolar",
         "poster": "assets/posters/6.jpg"
       },
       {
         "type": "video",
         "src": "assets/videos/7.mp4",
         "title": "Proje videosu 7",
+        "category": "Videolar",
         "poster": "assets/posters/7.jpg"
       },
       {
         "type": "video",
         "src": "assets/videos/8.mp4",
         "title": "Proje videosu 8",
+        "category": "Videolar",
         "poster": "assets/posters/8.jpg"
-      },
-      {
-        "type": "video",
-        "src": "assets/videos/9.mp4",
-        "title": "Proje videosu 9",
-        "poster": "assets/posters/9.jpg"
       }
     ]
   },
@@ -648,9 +875,33 @@
     "kicker": "REFERANSLARIMIZ",
     "title": "Birlikte çalıştığımız ve tamamladığımız yapılar.",
     "contractorsTitle": "Taşeron Olduğumuz Firmalar",
-    "contractors": ["Metson Nexus Kartal", "Toki Kağıthane", "Limak İnşaat", "Ritim İstanbul", "Doğaner İnşaat", "Sarıkaya İnşaat", "Koç İnşaat", "Doğan İnşaat", "Nida Yapı İnşaat", "Koca İnşaat", "Enka İnşaat"],
+    "contractors": [
+      "Metson Nexus Kartal",
+      "Toki Kağıthane",
+      "Limak İnşaat",
+      "Ritim İstanbul",
+      "Doğaner İnşaat",
+      "Sarıkaya İnşaat",
+      "Koç İnşaat",
+      "Doğan İnşaat",
+      "Nida Yapı İnşaat",
+      "Koca İnşaat",
+      "Enka İnşaat"
+    ],
     "buildingsTitle": "Yaptığımız İnşaatlar",
-    "buildings": ["Sefaköy: Yağmur Apartmanı", "Halkalı: Zeydin Apartmanı", "İkitelli: Dilek Apartmanı", "Ataşehir: Örs Apartmanı", "Sultanbeyli: Gürkan Apartmanı", "Sultanbeyli: Koç Apartmanı", "Sultanbeyli: Doğan Apartmanı", "Sultanbeyli: Koca Apartmanı", "Sultanbeyli: Ayhan Apartmanı", "Sultanbeyli: Yılmaz Apartmanı", "Sultanbeyli: Dilek Apartmanı"]
+    "buildings": [
+      "Sefaköy: Yağmur Apartmanı",
+      "Halkalı: Zeydin Apartmanı",
+      "İkitelli: Dilek Apartmanı",
+      "Ataşehir: Örs Apartmanı",
+      "Sultanbeyli: Gürkan Apartmanı",
+      "Sultanbeyli: Koç Apartmanı",
+      "Sultanbeyli: Doğan Apartmanı",
+      "Sultanbeyli: Koca Apartmanı",
+      "Sultanbeyli: Ayhan Apartmanı",
+      "Sultanbeyli: Yılmaz Apartmanı",
+      "Sultanbeyli: Dilek Apartmanı"
+    ]
   },
   "process": {
     "index": "05",

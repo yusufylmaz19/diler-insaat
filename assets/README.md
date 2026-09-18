@@ -1,15 +1,16 @@
 # Medya klasörleri
 
-- Proje fotoğraflarını `images/projects/` içine ekleyin.
+- Fotoğrafları `inşaat/`, `iç mimari/`, `asma tavan-alçıpan/` ve `laminant parke/` klasörlerine ekleyin.
 - Videoları `videos/`, video kapaklarını `posters/` içine ekleyin.
-- Ardından proje klasöründe `python3 scripts/sync-media.py` çalıştırın. Fotoğraf ve videolar `data.json` içindeki `projects.media` listesine eklenir; aynı isimli video kapağı eşleştirilir (ör. `1.mp4` → `1.jpg`). Mevcut kayıtlar korunur ve tekrar eklenmez.
+- Bağlantı önizleme görseli `preview/95.jpeg` dosyasındadır.
+- Ardından proje klasöründe `python scripts/sync-media.py` çalıştırın. Fotoğraf ve videolar `data.json` içindeki `projects.media` listesini kategori sırasına göre yeniden oluşturur; aynı isimli video kapağı eşleştirilir (ör. `1.mp4` → `1.jpg`).
 - Site statiktir: yalnızca klasöre dosya kopyalamak yeterli değildir. Yeni medya eklediğinizde komutu yeniden çalıştırın ve güncellenen `data.json` dosyasını da siteyle birlikte yükleyin.
-- Alternatif olarak `projects.items` veya `projects.media` listesine dosya yolunu elle ekleyebilirsiniz.
+- `projects.media` listesi her eşitlemede yeniden oluşturulur; kalıcı değişiklikler için medya dosyalarını ilgili klasöre ekleyin.
 
 Örnek fotoğraf kaydı:
 
 ```json
-{"title":"Villa Projesi","category":"Anahtar Teslim","location":"İstanbul","year":"2026","image":"assets/images/projects/villa-01.jpg"}
+{"type":"image","src":"assets/inşaat/1.jpeg","title":"İnşaat uygulaması 1","category":"İnşaat"}
 ```
 
 Örnek video kaydı:

@@ -72,17 +72,12 @@ function projectCard(item, index) {
 }
 function renderFeatureShowcase(items) {
   const photos = items.filter((item) => item.type !== "video");
-  const picks = [4, 2, 33, 47].map((index) => photos[index]).filter(Boolean);
-  const captions = [
-    ["İnce işçilik, güçlü sonuç", "İÇ MEKÂN UYGULAMALARI"],
-    ["Detaylarda bütünlük", "TADİLAT & DEKORASYON"],
-    ["Gücün görünür hâli", "ÇELİK KONSTRÜKSİYON"],
-    ["Her aşamada özen", "UYGULAMA & TESLİM"],
-  ];
+  const categories = ["İnşaat", "İç Mimari", "Alçıpan Asma Tavan", "Laminant Parke"];
+  const picks = categories.map((category) => photos.find((item) => item.category === category)).filter(Boolean);
   const figures = picks
     .map((item, index) => {
       const mediaIndex = items.indexOf(item);
-      return `<figure class="work-feature reveal"><button class="work-feature-open" type="button" data-lightbox-index="${mediaIndex}" aria-label="${esc(captions[index][0])} görselini büyüt"><img src="${esc(item.src)}" alt="${esc(captions[index][0])}" loading="lazy" decoding="async"><span aria-hidden="true">↗</span></button><figcaption><strong>${esc(captions[index][0])}</strong><small>${esc(captions[index][1])}</small><em>/ 0${index + 1}</em></figcaption></figure>`;
+      return `<figure class="work-feature reveal"><button class="work-feature-open" type="button" data-lightbox-index="${mediaIndex}" aria-label="${esc(item.category)} görselini büyüt"><img src="${esc(item.src)}" alt="${esc(item.category)} uygulaması" loading="lazy" decoding="async"><span aria-hidden="true">↗</span></button><figcaption><strong>${esc(item.category)}</strong><small>UYGULAMA FOTOĞRAFLARI</small><em>/ 0${index + 1}</em></figcaption></figure>`;
     })
     .join("");
   return `<section class="section work-showcase" aria-labelledby="work-showcase-title"><div class="wrap"><header class="work-showcase-head"><h2 id="work-showcase-title">İşimiz,<br>kendini anlatır.</h2><p>Çizgilerimiz mekâna dönüştüğü anlar.<br>Uygulamalarımızdan detaylara ve tamamlanan yaşam alanlarına bir bakış.</p></header><div class="work-showcase-grid">${figures}</div></div></section>`;
@@ -93,19 +88,17 @@ function renderLightbox() {
 }
 
 function renderMedia(items) {
-  const photos = items.filter((item) => item.type !== "video");
-  const videos = items.filter((item) => item.type === "video");
+  const categories = ["İnşaat", "İç Mimari", "Alçıpan Asma Tavan", "Laminant Parke", "Videolar"];
   const cards = items
     .map((item, index) => {
-      const kind = item.type === "video" ? "videos" : "photos";
-      if (kind === "videos") {
-        return `<button class="media-item media-video" type="button" data-media-kind="videos" data-lightbox-index="${index}" aria-label="${esc(item.title || "Proje videosu")} videosunu aç"${index >= 8 ? " hidden" : ""}><img src="${esc(item.poster || "assets/construction-fallback.svg")}" alt="" loading="lazy"><span class="media-play" aria-hidden="true">▶</span></button>`;
+      if (item.type === "video") {
+        return `<button class="media-item media-video" type="button" data-media-category="${esc(item.category)}" data-lightbox-index="${index}" aria-label="${esc(item.title)} videosunu aç" hidden><img src="${esc(item.poster || "assets/construction-fallback.svg")}" alt="" loading="lazy"><span class="media-play" aria-hidden="true">▶</span><span class="media-item-label">${esc(item.category)}</span></button>`;
       }
-      return `<button class="media-item media-photo" type="button" data-media-kind="photos" data-lightbox-index="${index}" aria-label="${esc(item.title || "Proje fotoğrafı")} görselini büyüt"${index >= 8 ? " hidden" : ""}><img src="${esc(item.src)}" alt="${esc(item.title || "Proje fotoğrafı")}" loading="lazy" decoding="async"></button>`;
+      return `<button class="media-item media-photo" type="button" data-media-category="${esc(item.category)}" data-lightbox-index="${index}" aria-label="${esc(item.title)} görselini büyüt" hidden><img src="${esc(item.src)}" alt="${esc(item.title)}" loading="lazy" decoding="async"><span class="media-item-label">${esc(item.category)}</span></button>`;
     })
     .join("");
 
-  return `<div class="media-archive wrap" data-media-filter="all"><div class="media-toolbar"><div class="media-tabs" role="group" aria-label="Arşiv filtreleri"><button type="button" class="media-tab active" aria-pressed="true" data-media-tab="all">Tüm arşiv</button>${photos.length ? '<button type="button" class="media-tab" aria-pressed="false" data-media-tab="photos">Fotoğraflar</button>' : ""}${videos.length ? '<button type="button" class="media-tab" aria-pressed="false" data-media-tab="videos">Videolar</button>' : ""}</div><p class="media-count" role="status" aria-live="polite">${Math.min(8, items.length)} / ${items.length} uygulama karesi</p></div><div class="media-grid" id="media-grid">${cards}</div><div class="media-more-wrap">${items.length > 8 ? '<button type="button" class="button media-more" aria-controls="media-grid">Daha Fazla Göster</button>' : ""}</div></div>`;
+  return `<div class="media-archive wrap" data-media-filter="all"><div class="media-toolbar"><div class="media-tabs" role="group" aria-label="Çalışma alanları"><button type="button" class="media-tab active" aria-pressed="true" data-media-tab="all">Tüm İşler</button>${categories.map((category) => `<button type="button" class="media-tab" aria-pressed="false" data-media-tab="${esc(category)}">${esc(category)}</button>`).join("")}</div><p class="media-count" role="status" aria-live="polite"></p></div><div class="media-grid" id="media-grid">${cards}</div><div class="media-more-wrap"><button type="button" class="button media-more" aria-controls="media-grid"><span>Daha fazla görsel yükle</span><span class="media-more-icon" aria-hidden="true">↓</span></button><p class="media-more-note">Arşivde keşfedilecek daha çok uygulama var.</p></div></div>`;
 }
 function initMedia() {
   document.querySelectorAll("video").forEach((video) => {
@@ -126,11 +119,13 @@ function initMedia() {
   const moreButton = $(".media-more", archive);
   const count = $(".media-count", archive);
   let filter = "all";
-  let visibleLimit = 8;
+  const smallScreen = window.matchMedia("(max-width: 700px)");
+  let visibleLimit = smallScreen.matches ? 12 : 43;
+  const pageSize = () => smallScreen.matches ? 12 : 43;
 
   const update = () => {
     const filtered = cards.filter(
-      (card) => filter === "all" || card.dataset.mediaKind === filter,
+      (card) => filter === "all" || card.dataset.mediaCategory === filter,
     );
     cards.forEach((card) => {
       const position = filtered.indexOf(card);
@@ -138,14 +133,16 @@ function initMedia() {
     });
     const visible = Math.min(visibleLimit, filtered.length);
     if (count)
-      count.textContent = `${visible} / ${filtered.length} uygulama karesi`;
+      count.textContent = `${visible} / ${filtered.length} görsel`;
     if (moreButton) moreButton.hidden = visible >= filtered.length;
+    const moreNote = $(".media-more-note", archive);
+    if (moreNote) moreNote.hidden = visible >= filtered.length;
   };
 
   archive.querySelectorAll(".media-tab").forEach((tab) => {
     tab.addEventListener("click", () => {
       filter = tab.dataset.mediaTab;
-      visibleLimit = 8;
+      visibleLimit = pageSize();
       archive.dataset.mediaFilter = filter;
       archive.querySelectorAll(".media-tab").forEach((item) => {
         const active = item === tab;
@@ -158,12 +155,16 @@ function initMedia() {
 
   if (moreButton) {
     moreButton.addEventListener("click", () => {
-      visibleLimit += 8;
+      visibleLimit += pageSize();
       update();
     });
   }
 
   update();
+  smallScreen.addEventListener("change", () => {
+    visibleLimit = pageSize();
+    update();
+  });
 }
 function initLightbox(items) {
   const dialog = $(".lightbox");

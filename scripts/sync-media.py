@@ -1,4 +1,4 @@
-"""Register local photos and videos in the static site's data.json."""
+"""Build the categorized photo and video gallery in data.json."""
 
 import json
 import re
@@ -20,28 +20,37 @@ def files(folder, extensions):
 
 def main():
     data_path = ROOT / "data.json"
-    data = json.loads(data_path.read_text())
-    media = data["projects"].setdefault("media", [])
-    existing = {item["src"]: item for item in media}
+    data = json.loads(data_path.read_text(encoding="utf-8"))
+    media = []
+    categories = (
+        ("İnşaat", "assets/inşaat"),
+        ("İç Mimari", "assets/iç mimari"),
+        ("Alçıpan Asma Tavan", "assets/asma tavan-alçıpan"),
+        ("Laminant Parke", "assets/laminant parke"),
+    )
+    groups = []
+    for label, folder in categories:
+        groups.append([
+            {"type": "image", "src": path.relative_to(ROOT).as_posix(),
+             "title": f"{label} uygulaması {path.stem}", "category": label}
+            for path in files(folder, IMAGE_EXTENSIONS)
+        ])
+    # Mix categories so the first gallery page shows every area of work.
+    for index in range(max(map(len, groups))):
+        for group in groups:
+            if index < len(group):
+                media.append(group[index])
     posters = {path.stem: path.relative_to(ROOT).as_posix()
                for path in files("assets/posters", IMAGE_EXTENSIONS)}
-    added = 0
-    for kind, folder, extensions in (
-        ("image", "assets/images/projects", IMAGE_EXTENSIONS),
-        ("video", "assets/videos", VIDEO_EXTENSIONS),
-    ):
-        for path in files(folder, extensions):
-            src = path.relative_to(ROOT).as_posix()
-            if src not in existing:
-                label = "Proje videosu" if kind == "video" else "Proje fotoğrafı"
-                item = {"type": kind, "src": src, "title": f"{label} {path.stem}"}
-                media.append(item)
-                existing[src] = item
-                added += 1
-            if kind == "video" and path.stem in posters:
-                existing[src].setdefault("poster", posters[path.stem])
-    data_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
-    print(f"{added} yeni medya eklendi. Toplam: {len(media)}")
+    for path in files("assets/videos", VIDEO_EXTENSIONS):
+        item = {"type": "video", "src": path.relative_to(ROOT).as_posix(),
+                "title": f"Proje videosu {path.stem}", "category": "Videolar"}
+        if path.stem in posters:
+            item["poster"] = posters[path.stem]
+        media.append(item)
+    data["projects"]["media"] = media
+    data_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Galeri güncellendi: {len(media)} medya")
 
 
 if __name__ == "__main__":
