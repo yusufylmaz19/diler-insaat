@@ -278,3 +278,38 @@
     transition: none;
   }
 }
+
+.construction-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.construction-scroll-control {
+  display: none;
+  min-height: 40px;
+  padding: 9px 12px;
+  border: 1px solid var(--rust);
+  background: var(--rust);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+}
+.construction-scroll-control[aria-pressed="false"] {
+  background: var(--paper);
+  color: var(--rust);
+}
+.construction-scroll-control[hidden] { display: none; }
+@media (max-width: 700px) {
+  .construction-caption {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .construction-controls {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .construction-scroll-control { display: inline-flex; align-items: center; }
+}

@@ -7,6 +7,7 @@ export function initConstructionScene({ hero, grid, track, visual, copy }) {
   const count = visual.querySelector(".construction-count");
   const bar = visual.querySelector(".construction-progress span");
   const control = visual.querySelector(".construction-control");
+  const scrollControl = visual.querySelector(".construction-scroll-control");
   const hint = visual.querySelector(".construction-hint");
   const mobile = matchMedia("(max-width:700px)"),
     reduced = matchMedia("(prefers-reduced-motion:reduce)");
@@ -293,13 +294,14 @@ export function initConstructionScene({ hero, grid, track, visual, copy }) {
     last = 0,
     visible = false,
     paused = false,
+    scrollEnabled = true,
     optIn = false,
     lost = false,
     disposed = false,
     frame = 0,
     stageIndex = -1;
   const duration = Math.max(12, Number(copy.duration) || 24);
-  const staticMode = () => reduced.matches && !optIn;
+  const staticMode = () => (reduced.matches && !optIn) || (mobile.matches && !scrollEnabled);
   const timed = () => optIn;
   const cleanups = [];
   function listen(target, event, handler, options) {
@@ -334,7 +336,7 @@ export function initConstructionScene({ hero, grid, track, visual, copy }) {
     visual.dataset.stage = String(next);
     control.textContent = staticMode()
       ? copy.start
-      : progress >= 1
+      : timed() && progress >= 1
         ? copy.replay
         : paused
           ? copy.resume
@@ -408,8 +410,12 @@ export function initConstructionScene({ hero, grid, track, visual, copy }) {
     paused = false;
     stageIndex = -1;
     hero.classList.toggle("construction-static", staticMode() || optIn);
-    control.hidden = !(timed() || staticMode());
-    hint.textContent = copy.desktopHint;
+    control.hidden = (mobile.matches && !scrollEnabled) || !(timed() || staticMode() || mobile.matches);
+    control.setAttribute("aria-pressed", "false");
+    scrollControl.hidden = false;
+    scrollControl.setAttribute("aria-pressed", String(scrollEnabled));
+    scrollControl.textContent = `Kaydırmalı animasyon: ${scrollEnabled ? "Açık" : "Kapalı"}`;
+    hint.textContent = mobile.matches ? copy.mobileHint : copy.desktopHint;
     resize();
     updateLoop();
   }
@@ -443,7 +449,7 @@ export function initConstructionScene({ hero, grid, track, visual, copy }) {
       modeChanged();
       return;
     }
-    if (progress >= 1) {
+    if (timed() && progress >= 1) {
       elapsed = 0;
       progress = 0;
       paused = false;
@@ -451,6 +457,10 @@ export function initConstructionScene({ hero, grid, track, visual, copy }) {
     } else paused = !paused;
     control.setAttribute("aria-pressed", String(paused));
     updateLoop();
+  });
+  listen(scrollControl, "click", () => {
+    scrollEnabled = !scrollEnabled;
+    modeChanged();
   });
   listen(canvas, "webglcontextlost", (event) => {
     event.preventDefault();
@@ -460,6 +470,7 @@ export function initConstructionScene({ hero, grid, track, visual, copy }) {
     visual.classList.add("construction-failed");
     visual.classList.remove("construction-ready");
     control.hidden = true;
+    scrollControl.hidden = true;
   });
   listen(canvas, "webglcontextrestored", () => {
     lost = false;
