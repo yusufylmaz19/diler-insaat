@@ -6,6 +6,8 @@
     "location": "İstanbul",
     "phone": "+90 535 402 47 73",
     "phoneHref": "tel:+905354024773",
+    "secondPhone": "+90 534 223 35 51",
+    "secondPhoneHref": "tel:+905342233551",
     "whatsapp": "https://wa.me/905354024773?text=Merhaba%2C%20projem%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20ve%20bilgi%20almak%20istiyorum.",
     "instagram": "https://www.instagram.com/chilliskevin/",
     "maps": "https://www.google.com/maps/search/?api=1&query=Diler%20%C4%B0n%C5%9Faat%20%C4%B0stanbul"
@@ -18,6 +20,10 @@
     {
       "label": "Projeler",
       "href": "#projeler"
+    },
+    {
+      "label": "Referanslar",
+      "href": "#referanslar"
     },
     {
       "label": "Süreç",
@@ -637,8 +643,17 @@
       }
     ]
   },
-  "process": {
+  "references": {
     "index": "04",
+    "kicker": "REFERANSLARIMIZ",
+    "title": "Birlikte çalıştığımız ve tamamladığımız yapılar.",
+    "contractorsTitle": "Taşeron Olduğumuz Firmalar",
+    "contractors": ["Metson Nexus Kartal", "Toki Kağıthane", "Limak İnşaat", "Ritim İstanbul", "Doğaner İnşaat", "Sarıkaya İnşaat", "Koç İnşaat", "Doğan İnşaat", "Nida Yapı İnşaat", "Koca İnşaat", "Enka İnşaat"],
+    "buildingsTitle": "Yaptığımız İnşaatlar",
+    "buildings": ["Sefaköy: Yağmur Apartmanı", "Halkalı: Zeydin Apartmanı", "İkitelli: Dilek Apartmanı", "Ataşehir: Örs Apartmanı", "Sultanbeyli: Gürkan Apartmanı", "Sultanbeyli: Koç Apartmanı", "Sultanbeyli: Doğan Apartmanı", "Sultanbeyli: Koca Apartmanı", "Sultanbeyli: Ayhan Apartmanı", "Sultanbeyli: Yılmaz Apartmanı", "Sultanbeyli: Dilek Apartmanı"]
+  },
+  "process": {
+    "index": "05",
     "kicker": "ÇALIŞMA ŞEKLİMİZ",
     "title": "Belirsizliği azaltan dört net adım.",
     "steps": [
